@@ -1,0 +1,15 @@
+.button {
+  padding: 7px 44px;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: $basic-green;
+  color: $basic-white;
+
+  &:hover {
+    background-color: $basic-green2;
+  }
+
+  &:focus {
+    color: rgba($color: $basic-white, $alpha: 0.3)
+  }
+}

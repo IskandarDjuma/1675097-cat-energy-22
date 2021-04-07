@@ -1,0 +1,17 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+}
+
+.site-list__link {
+  display: block;
+  color: $basic-black;
+
+  &:hover {
+    color: $special-grey3;
+  }
+
+  &:focus {
+    color: $special-grey;
+  }
+}

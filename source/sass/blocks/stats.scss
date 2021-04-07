@@ -1,0 +1,15 @@
+.stats__number {
+  @include font-size (24px, 24px, 400);
+}
+
+.stats__description {
+  font-family: $secondary-text;
+  color: $special-dark-grey;
+  @include font-size (12px, 12px, 400);
+}
+
+.stats__expenses {
+  font-family: $primary-text;
+  @include font-size (14px, 20px, 400);
+  text-transform: uppercase;
+}
