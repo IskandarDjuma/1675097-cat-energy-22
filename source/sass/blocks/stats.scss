@@ -1,15 +1,17 @@
 .stats__number {
   @include font-size (24px, 24px, 400);
+  font-family: $primary-text;
+  color: $basic-black;
 }
 
 .stats__description {
-  font-family: $secondary-text;
-  color: $special-dark-grey;
   @include font-size (12px, 12px, 400);
+  margin: 0;
 }
 
 .stats__expenses {
-  font-family: $primary-text;
   @include font-size (14px, 20px, 400);
+  font-family: $primary-text;
   text-transform: uppercase;
+  color: $basic-black;
 }

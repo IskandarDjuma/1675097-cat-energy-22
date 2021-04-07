@@ -1,11 +1,8 @@
-.site-list {
-  margin: 0;
-  padding: 0;
-}
-
 .site-list__link {
-  display: block;
+  @include font-size (20px, 20px, 500);
+  font-family: $primary-text;
   color: $basic-black;
+  text-transform: uppercase;
 
   &:hover {
     color: $special-grey3;
