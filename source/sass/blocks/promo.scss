@@ -1,0 +1,14 @@
+.promo__headline {
+  @include font-size (36px, 36px, 400);
+  font-family: $primary-text;
+  color: $basic-black;
+  margin: 0;
+}
+
+.promo__subtitle {
+  @include font-size (14px, 14px, 400);
+  font-family: $primary-text;
+  text-transform: uppercase;
+  color: $basic-black;
+  margin: 0;
+}

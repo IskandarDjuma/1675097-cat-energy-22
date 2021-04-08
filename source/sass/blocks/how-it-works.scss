@@ -1,0 +1,17 @@
+.how-it-works__title {
+  @include font-size (36px, 40px, 400);
+  font-family: $primary-text;
+  color: $basic-black;
+  margin: 0;
+}
+
+.how-it-works__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.how-it-works__description {
+  @include font-size (14px, 18px, 400);
+  margin: 0;
+}

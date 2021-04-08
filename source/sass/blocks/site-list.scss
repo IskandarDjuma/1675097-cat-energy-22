@@ -1,0 +1,14 @@
+.site-list__link {
+  @include font-size (20px, 20px, 500);
+  font-family: $primary-text;
+  color: $basic-black;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $special-grey3;
+  }
+
+  &:focus {
+    color: $special-grey;
+  }
+}
