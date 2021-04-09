@@ -8,29 +8,17 @@
   text-transform: uppercase;
 }
 
+.form__group {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
 .form__legend {
   @include font-size (24px, 26px, 400);
   font-family: $primary-text;
   color: $basic-black;
-}
-
-.form__input::placeholder {
-  @include font-size (16px, 18px, 400);
-  font-family: $primary-text;
-  text-transform: uppercase;
-}
-
-// в textarea не отоброжается надпись placeholdera. Подскажи с чем связанно?
-
-.form__input,
-.form__textarea {
-  &:hover {
-    border-color: $special-grey;
-  }
-
-  &:focus {
-    border-color: $special-dark-grey;
-  }
+  padding: 0;
 }
 
 .form__required {
