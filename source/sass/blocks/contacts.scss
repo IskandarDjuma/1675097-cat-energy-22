@@ -10,3 +10,7 @@
   @include font-size (14px, 20px, 400);
   font-style: normal;
 }
+
+.contacts__inner {
+  background-color: $basic-grey;
+}
