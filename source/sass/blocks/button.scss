@@ -8,10 +8,9 @@
   background-color: $transparent;
 
   &--primary {
+    @include font-size (14px, 18px, 400);
     background-color: $accent-color;
     font-family: $primary-text;
-    font-size: 14px;
-    line-height: 18px;
     padding: 7px 44px;
     color: $basic-white;
 
@@ -21,6 +20,22 @@
 
     &:focus {
       color: rgba($basic-white, 0.3);
+    }
+  }
+
+  &--secondary {
+    @include font-size (16px, 20px, 400);
+    background-color: $basic-grey;
+    font-family: $primary-text;
+    padding: 7px 44px;
+    color: $special-dark-grey;
+
+    &:hover {
+      background-color: $special-grey2;
+    }
+
+    &:focus {
+      color: rgba($special-dark-grey, 0.3);
     }
   }
 }

@@ -1,0 +1,23 @@
+.additionally__title {
+  @include font-size (24px, 24px, 400);
+  font-family: $primary-text;
+  color: $basic-black;
+  margin: 0;
+}
+
+.additionally__list {
+  @include list-reset;
+}
+
+.additionally__caption {
+  @include font-size (16px, 16px, 400);
+  font-family: $primary-text;
+  color: $special-dark-grey2;
+  margin: 0;
+}
+
+.additionally__text {
+  @include font-size (14px, 14px, 400);
+  color: $special-dark-grey;
+  margin: 0;
+}
