@@ -1,0 +1,27 @@
+.card__title {
+  @include font-size (16px, 20px, 400);
+  font-family: $primary-text;
+  margin: 0;
+}
+
+.card__link {
+  color: $special-dark-grey2;
+
+  &:hover {
+    color: $special-grey3;
+  }
+
+  &:focus {
+    color: $special-grey;
+  }
+}
+
+.card-content {
+  @include font-size (12px, 16px, 400);
+  margin: 0;
+  color: $special-dark-grey;
+}
+
+.card-content__definition {
+  margin: 0;
+}
