@@ -26,3 +26,16 @@
   color: $basic-black;
   position: relative;
 }
+
+.benefits__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 773px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 374px;
+    width: 1221px;
+  }
+}

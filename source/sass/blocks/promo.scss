@@ -12,3 +12,18 @@
   color: $basic-black;
   margin: 0;
 }
+
+.promo__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 709px;
+    height: 831px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 648px;
+    width: 1217px;
+  }
+}

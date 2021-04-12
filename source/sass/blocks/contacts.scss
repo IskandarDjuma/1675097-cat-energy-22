@@ -14,3 +14,16 @@
 .contacts__inner {
   background-color: $basic-grey;
 }
+
+.contacts__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 601px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 549px;
+    width: 1221px;
+  }
+}

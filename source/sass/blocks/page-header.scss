@@ -1,4 +1,31 @@
 .page-header {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 709px;
+    margin: 0 auto;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1217px;
+  }
+}
+
+.page-header__logo {
+  height: 67px;
+
+  @media (min-width: $tablet-width) {
+    height: 125px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 180px;
+  }
 }
