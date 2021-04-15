@@ -9,3 +9,9 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin above($bp) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}
