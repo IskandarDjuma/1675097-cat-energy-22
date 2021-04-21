@@ -128,15 +128,17 @@
           </div>
         </div>
         <div class="example-slider slider">
-          <img class="slider__image-before" src="img/cat-fat.png" width="311" height="232"
-            alt="Фотография толстого кота до приема программы питания">
-          <img class="slider__image-after" src="img/cat-skinny.png" width="311" height="232"
-            alt="Фотография похудевшего кота после приема программы питания">
-          <div class="slider__button">
-            <button class="slider__slide-button button" type="button">Было</button>
-            <button class="slider__slide-button button" type="button">Стало</button>
+          <div class="slider__image-before">
+            <img src="img/cat-fat.png" width="311" height="232" alt="Фотография толстого кота до приема программы питания">
           </div>
-          <div class="slider__range-control">
+          <div class="slider__image-after">
+            <img class="slider__image-after" src="img/cat-skinny.png" width="311" height="232" alt="Фотография похудевшего кота после приема программы питания">
+          </div>
+          <div class="slider__buttons">
+            <button class="slider__button button" type="button">Было</button>
+            <button class="slider__button button" type="button">Стало</button>
+          </div>
+          <div class="slider__range">
             <div class="slider__scale">
               <div class="slider__bar"></div>
             </div>
@@ -148,11 +150,11 @@
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <div class="container">
-        <div class="contacts__wrapper">
-          <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-        </div>
+      <div class="contacts__wrapper container">
+        <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </div>
+      <div class="contacts__map-wrapper">
         <img class="contacts__map-img" src="img/map.jpg" alt="Карта проезда" width="320" height="362">
       </div>
     </section>

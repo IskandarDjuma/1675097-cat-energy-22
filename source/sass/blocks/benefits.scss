@@ -9,25 +9,26 @@
 .benefits__list {
   @include list-reset;
 
-  display: flex;
-  flex-direction: column;
-
   @include above($desktop-width) {
-    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
 .benefits__item {
   background-color: $basic-grey;
   margin-bottom: 20px;
+  padding: 30px 20px 22px;
 
-  &:last-child {
-    margin-bottom: 0;
+  @include above($tablet-width) {
+    padding: 77px 52px 53px;
+    margin-bottom: 30px;
   }
 
   @include above($desktop-width) {
-    flex: 1 1 auto;
-    margin-left: 80px;
+    width: calc(50% - 40px);
+    margin-bottom: 20px;
   }
 }
 
@@ -38,33 +39,38 @@
   text-transform: uppercase;
   margin: 0;
   text-align: center;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 
   @include above($tablet-width) {
     @include font-size (36px, 36px, 400);
     text-align: left;
-    padding-left: 52px;
-    padding-top: 77px;
-    padding-bottom: 24px;
+    margin-bottom: 24px;
   }
 
   @include above($desktop-width) {
     text-align: center;
+    margin-bottom: 73px;
   }
 }
 
 .benefit__description {
   @include font-size (14px, 18px, 400);
   margin: 0;
-  min-width: 227px;
-  padding-left: 20px;
-  padding-bottom: 38px;
+  margin-bottom: 15px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid $basic-light-grey;
 
   @include above($tablet-width) {
     @include font-size (16px, 24px, 400);
-    padding-left: 52px;
-    padding-bottom: 48px;
-    max-width: 400px;
+    padding-bottom: 0;
+    border: none;
+    margin-bottom: 48px;
+    max-width: 377px;
+  }
+
+  @include above($desktop-width) {
+    margin-bottom: 23px;
+    max-width: 467px;
   }
 }
 
@@ -72,13 +78,12 @@
   @include font-size (16px, 16px, 400);
   font-family: $primary-text;
   text-transform: uppercase;
-  padding-left: 20px;
+
   color: $basic-black;
   position: relative;
 
+
   @include above($tablet-width) {
     @include font-size (20px, 30px, 400);
-    padding-left: 52px;
-    padding-bottom: 45px;
   }
 }

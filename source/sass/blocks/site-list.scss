@@ -2,14 +2,26 @@
   @include above($tablet-width) {
     display: flex;
     flex: wrap;
-    justify-content: space-between;
-    min-width: 440px;
+    justify-content: flex-end;
+    text-align: center;
   }
 }
 
 .site-list__item {
   @include above($tablet-width) {
-    margin-right: auto;
+    margin-left: 34px;
+
+    &--active {
+      border-bottom: 1px solid $basic-green;
+    }
+  }
+
+  @include above($desktop-width) {
+    margin-left: 37px;
+
+    &--active {
+      border-bottom: 1px solid $basic-white;
+    }
   }
 }
 
@@ -33,5 +45,6 @@
 
   @include above($desktop-width) {
     @include font-size (20px, 30px, 400);
+    color: $basic-white;
   }
 }
