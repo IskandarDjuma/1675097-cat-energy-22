@@ -1,16 +1,53 @@
+.contacts {
+  position: relative;
+}
+
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 20px;
+
+  @include above($desktop-width) {
+    position: absolute;
+    top: 101px;
+    width: 520px;
+    padding: 30px;
+    background-color: $basic-white;
+  }
+}
+
 .contacts__title {
   @include font-size (16px, 18px, 400);
   font-family: $primary-text;
   color: $basic-black;
   text-transform: uppercase;
   margin: 0;
+
+  @include above($tablet-width) {
+    @include font-size (20px, 21px, 400);
+    width: 171px;
+  }
 }
 
 .contacts__address {
   @include font-size (14px, 20px, 400);
   font-style: normal;
+
+  @include above($tablet-width) {
+    @include font-size (16px, 20px, 400);
+    text-align: right;
+    width: 160px;
+  }
 }
 
 .contacts__inner {
   background-color: $basic-grey;
+}
+
+.contacts__map-wrapper {
+  max-width: 100%;
+}
+
+.contacts__map-img {
+  display: flex;
 }

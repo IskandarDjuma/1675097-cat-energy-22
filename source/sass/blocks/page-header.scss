@@ -1,4 +1,18 @@
 .page-header {
+  min-height: 66px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+
+
+  @include above ($tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 42px 0 62px;
+  }
+}
+
+.page-header__toggle {
+  @include above ($tablet-width) {
+    display: none;
+  }
 }

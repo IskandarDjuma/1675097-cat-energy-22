@@ -1,14 +1,92 @@
+.promo {
+  background-image: url("../img/bg-cat-mobile.png"), linear-gradient(to bottom, #62a53a 60.8%, transparent 60.8%, transparent 100%);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  padding: 27px 0 22px;
+  position: relative;
+
+  @include above ($tablet-width) {
+    background: none;
+    padding: 64px 0 526px;
+  }
+
+  @include above ($desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: calc(100% / 2 - 40px);
+      top: -150px;
+      right: 0;
+      bottom: 31px;
+      background-color: #64a73c;
+      background-image: url("../img/bg-cat-mobile.png");
+      background-size: 694px auto;
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      z-index: -1;
+    }
+    padding: 111px 0 267px;
+  }
+}
+
+.promo__wrapper {
+  position: relative;
+
+  @include above ($tablet-width) {
+    padding-left: 117px;
+  }
+
+  .button {
+    margin-top: auto;
+  }
+}
+
 .promo__headline {
   @include font-size (36px, 36px, 400);
   font-family: $primary-text;
-  color: $basic-black;
+  color: $basic-white;
   margin: 0;
+  margin-bottom: 25px;
+  text-align: center;
+
+  @include above ($tablet-width) {
+    @include font-size (60px, 60px, 400);
+    color: $basic-black;
+    max-width: 501px;
+    text-align: left;
+    margin-bottom: 41px;
+  }
 }
 
 .promo__subtitle {
   @include font-size (14px, 14px, 400);
   font-family: $primary-text;
   text-transform: uppercase;
-  color: $basic-black;
+  color: $basic-white;
   margin: 0;
+  margin-bottom: 29px;
+  text-align: center;
+
+  @include above ($tablet-width) {
+    @include font-size (20px, 20px, 400);
+    color: $basic-black;
+    margin-bottom: 49px;
+    text-align: left;
+  }
+}
+
+.promo__img {
+  @include above ($tablet-width) {
+    position: absolute;
+    top: 259px;
+    left: 242px;
+    z-index: -1;
+  }
+
+  @include above ($desktop-width) {
+    top: 49px;
+    left: 538px;
+    z-index: -1;
+  }
 }

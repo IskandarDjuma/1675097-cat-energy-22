@@ -1,3 +1,30 @@
+.site-list {
+  @include above($tablet-width) {
+    display: flex;
+    flex: wrap;
+    justify-content: flex-end;
+    text-align: center;
+  }
+}
+
+.site-list__item {
+  @include above($tablet-width) {
+    margin-left: 34px;
+
+    &--active {
+      border-bottom: 1px solid $basic-green;
+    }
+  }
+
+  @include above($desktop-width) {
+    margin-left: 37px;
+
+    &--active {
+      border-bottom: 1px solid $basic-white;
+    }
+  }
+}
+
 .site-list__link {
   @include font-size (20px, 20px, 500);
   font-family: $primary-text;
@@ -10,5 +37,14 @@
 
   &:focus {
     color: $special-grey;
+  }
+
+  @include above($tablet-width) {
+    @include font-size (18px, 24px, 400);
+  }
+
+  @include above($desktop-width) {
+    @include font-size (20px, 30px, 400);
+    color: $basic-white;
   }
 }

@@ -1,3 +1,24 @@
 .page-footer {
   background-color: $basic-grey;
+  padding: 39px 0 32px;
+
+  @include above($tablet-width) {
+    padding: 55px 0 61px;
+    align-items: center;
+  }
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include above($tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__logo {
+  text-align: center;
+  margin-bottom: 52px;
 }
