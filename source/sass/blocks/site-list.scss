@@ -11,6 +11,10 @@
   @include above($tablet-width) {
     margin-left: 34px;
 
+    &:first-child {
+      margin-left: 0;
+    }
+
     &--active {
       border-bottom: 1px solid $basic-green;
     }
@@ -19,8 +23,16 @@
   @include above($desktop-width) {
     margin-left: 37px;
 
-    &--active {
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &--white {
       border-bottom: 1px solid $basic-white;
+
+      .site-list__link {
+        color: white;
+      }
     }
   }
 }
@@ -45,6 +57,5 @@
 
   @include above($desktop-width) {
     @include font-size (20px, 30px, 400);
-    color: $basic-white;
   }
 }
