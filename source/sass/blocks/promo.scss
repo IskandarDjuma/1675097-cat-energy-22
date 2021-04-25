@@ -15,10 +15,11 @@
       content: "";
       position: absolute;
       display: block;
-      width: calc(100% / 2 - 40px);
+      width: calc(100% / 2);
+      height: 694px;
       top: -150px;
       right: 0;
-      bottom: 31px;
+      bottom: 0;
       background-color: #64a73c;
       background-image: url("../img/bg-cat-mobile.png");
       background-size: 694px auto;

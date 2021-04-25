@@ -10,8 +10,9 @@
   @include above($desktop-width) {
     position: absolute;
     top: 101px;
+    left: calc(50% - 600px);
     width: 520px;
-    padding: 30px;
+    padding: 66px 89px 51px 76px;
     background-color: $basic-white;
   }
 }
@@ -42,10 +43,6 @@
 
 .contacts__inner {
   background-color: $basic-grey;
-}
-
-.contacts__map-wrapper {
-  max-width: 100%;
 }
 
 .contacts__map-img {

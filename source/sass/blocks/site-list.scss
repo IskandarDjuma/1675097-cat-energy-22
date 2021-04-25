@@ -5,11 +5,27 @@
     justify-content: flex-end;
     text-align: center;
   }
+
+  @include above($desktop-width) {
+    &--white {
+      .site-list__item {
+        border-bottom: 1px solid $basic-white;
+      }
+
+      .site-list__link {
+        color: white;
+      }
+    }
+  }
 }
 
 .site-list__item {
   @include above($tablet-width) {
     margin-left: 34px;
+
+    &:first-child {
+      margin-left: 0;
+    }
 
     &--active {
       border-bottom: 1px solid $basic-green;
@@ -19,8 +35,8 @@
   @include above($desktop-width) {
     margin-left: 37px;
 
-    &--active {
-      border-bottom: 1px solid $basic-white;
+    &:first-child {
+      margin-left: 0;
     }
   }
 }
@@ -45,6 +61,5 @@
 
   @include above($desktop-width) {
     @include font-size (20px, 30px, 400);
-    color: $basic-white;
   }
 }
