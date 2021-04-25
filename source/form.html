@@ -8,7 +8,7 @@
   <title>Форма</title>
 </head>
 
-<body class="page-body">
+<body class="page__body">
   <header class="page-header container">
     <a class="page-header__logo logo">
       <img class="page-header__logo-image" src="img/logo-img.svg" width="33" height="37"
@@ -37,7 +37,7 @@
       Страница формы для подбора программы
     </h1>
     <section class="program-selection">
-      <div class="container">
+      <div class="program-selection-wrapper container">
         <h2 class="program-selection__headline">
           Подбор программы
         </h2>
@@ -45,7 +45,7 @@
           Заполните анкету, и&nbsp;мы&nbsp;подберем программу питания для вашего кота
         </p>
       <form class="program-selection__form form" action="https://echo.htmlacademy.ru/" method="POST">
-        <fieldset class="form__group form__group-name">
+        <fieldset class="form__group form__group--name">
           <legend class="visually-hidden">Данные кота</legend>
           <ul class="form__list">
             <li class="form__field">
@@ -62,7 +62,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__group radio form__group-program">
+        <fieldset class="form__group radio form__group--program">
           <legend class="visually-hidden">Выбор программы</legend>
           <ul class="radio__list ">
             <li class="radio__item ">
@@ -79,26 +79,26 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__group form__group-contacts">
+        <fieldset class="form__group form__group--contacts">
           <legend class="form__legend">Контактные данные (владельца кота)</legend>
-          <ul class="form__list">
-            <li class="form__field">
+          <ul class="form__list form__row">
+            <li class="form__field form__row-list">
               <label class="form__label" for="block-mail">E-mail:*</label>
               <input class="form__input text-field field--icon" type="email" id="block-mail" name="email" placeholder="kuklachev@gmail.com">
             </li>
-            <li class="form__field">
+            <li class="form__field form__row-list">
               <label class="form__label" for="phone">Телефон:*</label>
               <input class="form__input text-field field--icon" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90">
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__group form__group-comments">
+        <fieldset class="form__group form__group--comments">
           <legend class="form__legend">Комментарий</legend>
           <label class="visually-hidden" for="comment">Вся необходимая информация о вашем коте</label>
-          <textarea class="form__textarea text-field--textarea" id="comment" name="comment" cols="60" rows="10" placeholder="Расскажите обо всех повадках кота"
+          <textarea class="form__textarea text-field text-field--textarea" id="comment" name="comment" cols="60" rows="10" placeholder="Расскажите обо всех повадках кота"
           ></textarea>
         </fieldset>
-        <fieldset class="form__group form__group-extra">
+        <fieldset class="form__group form__group--extra">
           <legend class="form__legend">Дополнительно</legend>
           <ul class="checkbox checkbox__list">
             <li class="checkbox__item">
@@ -137,7 +137,7 @@
       </div>
     </section>
     <footer class="page-footer">
-      <div class="page-footer__wrapper con">
+      <div class="page-footer__wrapper">
         <a class="page-footer__logo">
           <img class="page-footer__logo-title" src="img/logo-text.svg" width="128" height="24"
             alt="Логотип компании">

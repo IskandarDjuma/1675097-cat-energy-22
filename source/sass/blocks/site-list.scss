@@ -5,6 +5,18 @@
     justify-content: flex-end;
     text-align: center;
   }
+
+  @include above($desktop-width) {
+    &--white {
+      .site-list__item {
+        border-bottom: 1px solid $basic-white;
+      }
+
+      .site-list__link {
+        color: white;
+      }
+    }
+  }
 }
 
 .site-list__item {
@@ -25,14 +37,6 @@
 
     &:first-child {
       margin-left: 0;
-    }
-
-    &--white {
-      border-bottom: 1px solid $basic-white;
-
-      .site-list__link {
-        color: white;
-      }
     }
   }
 }
