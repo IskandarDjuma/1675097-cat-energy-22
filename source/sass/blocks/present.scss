@@ -1,5 +1,10 @@
 .present {
-  margin-bottom: 37px;
+  padding: 43px 61px 43px 58px;
+  min-height: 289px;
+  background-color: $basic-green;
+  background-image: url("../img/gift-photo-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .present__wrap {
@@ -18,14 +23,10 @@
   @include font-size (16px, 20px, 400);
   margin: 0;
   color: $basic-white;
-  position: absolute;
-  top: 147px;
-  left: 67px;
-  text-align: center;
   width: 161px;
+  text-align: center;
 
   @include above($tablet-width) {
-    top: 59px;
-    left: 500px;
+
   }
 }

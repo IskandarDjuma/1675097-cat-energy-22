@@ -91,3 +91,16 @@
     z-index: -1;
   }
 }
+
+.promo__button {
+  width: 100%;
+
+  @include above ($tablet-width) {
+    width: max-content;
+    margin-top: auto;
+  }
+
+  @include above ($desktop-width) {
+    @include font-size (20px, 20px, 400);
+  }
+}

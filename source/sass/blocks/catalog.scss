@@ -1,4 +1,8 @@
 .catalog {
+  @include above($tablet-width) {
+    margin-bottom: 60px;
+  }
+
   @include above($desktop-width) {
     margin-bottom: 75px;
   }
@@ -13,7 +17,7 @@
 
   @include above($tablet-width) {
     @include font-size (60px, 60px, 400);
-    margin-bottom: 164px;
+    margin-bottom: 84px;
   }
 }
 

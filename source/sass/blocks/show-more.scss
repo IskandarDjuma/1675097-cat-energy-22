@@ -1,5 +1,31 @@
+.show-more {
+  display: block;
+  min-height: 210px;
+  padding: 20px 0;
+  background-image: url("../img/icon/icon-plus.svg");
+  background-repeat: no-repeat;
+  background-position: center 25px;
+  background-size: 30px 30px;
+
+  @include above($tablet-width) {
+    margin-top: 100px;
+    height: 420px;
+    padding: 0;
+    border: 2px solid $basic-grey;
+    background: none;
+  }
+}
+
 .show-more__wrap {
   padding: 53px 0 35px;
+
+  @include above($tablet-width) {
+    padding: 161px 35px 38px;
+    background-image: url("../img/icon/icon-plus.svg");
+    background-repeat: no-repeat;
+    background-position: center 55px;
+    background-size: 60px 60px;
+  }
 }
 
 .show-more__title {
@@ -36,9 +62,9 @@
 
 .show-more__link {
   width: 100%;
-  padding: 10px 94px;
+  padding: 10px 35px;
 
   @include above($tablet-width) {
-    padding: 10px 73px;
+    margin-bottom: auto;
   }
 }

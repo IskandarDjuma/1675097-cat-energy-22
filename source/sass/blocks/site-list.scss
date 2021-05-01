@@ -8,12 +8,20 @@
 
   @include above($desktop-width) {
     &--white {
-      .site-list__item {
-        border-bottom: 1px solid $basic-white;
+      .site-list__item--active {
+        border-bottom: 2px solid $basic-white;
       }
 
       .site-list__link {
-        color: white;
+        color: $basic-white;
+
+        &:hover {
+          color: rgba $basic-white, 0.8;
+        }
+
+        &:focus {
+          color: rgba $basic-white, 0.5;
+        }
       }
     }
   }
@@ -28,7 +36,7 @@
     }
 
     &--active {
-      border-bottom: 1px solid $basic-green;
+      border-bottom: 2px solid $basic-green;
     }
   }
 
@@ -48,11 +56,11 @@
   text-transform: uppercase;
 
   &:hover {
-    color: $special-grey3;
+    opacity: 0.8;
   }
 
   &:focus {
-    color: $special-grey;
+    opacity: 0.3;
   }
 
   @include above($tablet-width) {
