@@ -1,4 +1,32 @@
+.present {
+  padding: 43px 61px 43px 58px;
+  min-height: 289px;
+  background-color: $basic-green;
+  background-image: url("../img/gift-photo-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.present__wrap {
+  position: relative;
+}
+
+.present__img {
+  @include above($tablet-width) {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+  }
+}
+
 .present__subtitle {
   @include font-size (16px, 20px, 400);
   margin: 0;
+  color: $basic-white;
+  width: 161px;
+  text-align: center;
+
+  @include above($tablet-width) {
+
+  }
 }

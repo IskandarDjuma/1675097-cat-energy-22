@@ -24,11 +24,12 @@
 
   @include above($tablet-width) {
     @include font-size (20px, 30px, 400);
+    flex: 0 0 auto;
+    margin-right: 10px;
   }
 
   @include above($desktop-width) {
     @include font-size (20px, 30px, 400);
-    flex: 0 0 auto;
     margin-right: 27px;
   }
 }
