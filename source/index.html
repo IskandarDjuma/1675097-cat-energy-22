@@ -10,11 +10,16 @@
 
 <body class="page__body">
   <header class="page-header container">
-    <a class="page-header__logo logo">
-      <img class="page-header__logo-image" src="img/logo-img.svg" width="33" height="37" alt="Логотип компании">
-      <img class="page-header__logo-title" src="img/logo-text.svg" width="101" height="18" alt="Cat-Energy">
-    </a>
-    <nav class="main-nav">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo logo">
+        <img class="page-header__logo-image" src="img/logo-img.svg" width="33" height="37" alt="Логотип компании">
+        <img class="page-header__logo-title" src="img/logo-text.svg" width="101" height="18" alt="Cat-Energy">
+      </a>
+      <button class="page-header__toggle page-header__toggle--open" type="button">
+        <span class="visually-hidden">Открыть/закрыть меню</span>
+      </button>
+    </div>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <ul class="main-nav__list site-list site-list--white">
         <li class="site-list__item site-list__item--active">
           <a class="site-list__link">Главная</a>
@@ -27,9 +32,6 @@
         </li>
       </ul>
     </nav>
-    <button class="page-header__toggle" type="button">
-      <span class="visually-hidden">Открыть/закрыть меню</span>
-    </button>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">
@@ -41,7 +43,11 @@
         <p class="promo__subtitle">
           Занялся собой? Займись котом!
         </p>
-        <img class="promo__img" src="img/index-can-mobile.png" alt="" width="280" height="270">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/index-can-desktop.png">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet.png">
+          <img class="promo__img" src="img/index-can-mobile.png" alt="">
+        </picture>
         <a class="promo__button button button--primary" href="form.html">Подобрать программу</a>
       </div>
     </section>
@@ -55,7 +61,7 @@
               Ваш кот весит больше собаки и&nbsp;почти утратил способность лазить по&nbsp;деревьям? Пора на&nbsp;диету!
               Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
             </p>
-            <a class="benefit__btn benefit__btn--arrow" href="catalog.html">Каталог Slim</a>
+            <a class="benefit__btn" href="catalog.html">Каталог Slim</a>
           </li>
           <li class="benefits__item benefit benefit--gain">
             <h3 class="benefit__title">Набор массы</h3>
@@ -63,7 +69,7 @@
               Заработать авторитет среди дворовых котов и&nbsp;даже собак? Серия Cat Energy Pro поможет вашему коту
               нарастить необходимые мышцы!
             </p>
-            <a class="benefit__btn benefit__btn--arrow" href="catalog.html">Каталог Pro</a>
+            <a class="benefit__btn" href="catalog.html">Каталог Pro</a>
           </li>
         </ul>
       </div>
@@ -129,22 +135,29 @@
         </div>
         <div class="example-slider slider">
           <div class="slider__image-before">
-            <img src="img/cat-fat.png" width="311" height="232" alt="Фотография толстого кота до приема программы питания">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/before-half-desktop.png">
+              <source media="(min-width: 768px)" srcset="img/before-half-desktop.png">
+              <img src="img/cat-fat.png" width="311" height="232" alt="Фотография толстого кота до приема программы питания">
+            </picture>
           </div>
           <div class="slider__image-after">
-            <img class="slider__image-after" src="img/cat-skinny.png" width="311" height="232" alt="Фотография похудевшего кота после приема программы питания">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/after-half-desktop.png">
+              <source media="(min-width: 768px)" srcset="img/after-half-desktop.png">
+              <img class="slider__image-after" src="img/cat-skinny.png" width="311" height="232" alt="Фотография похудевшего кота после приема программы питания">
+            </picture>
+
           </div>
           <div class="slider__buttons">
             <button class="slider__button button" type="button">Было</button>
+            <div class="slider__range">
+              <div class="slider__scale">
+                <div class="slider__bar" tabindex="0"></div>
+              </div>
+            </div>
             <button class="slider__button button" type="button">Стало</button>
           </div>
-          <div class="slider__range">
-            <div class="slider__scale">
-              <div class="slider__bar"></div>
-            </div>
-            <div class="slider__toggle" tabindex="0"></div>
-          </div>
-
         </div>
       </div>
     </section>
@@ -210,6 +223,7 @@
       </div>
     </footer>
   </main>
+  <script src="js/menu.js"></script>
 </body>
 
 </html>

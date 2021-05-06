@@ -5,6 +5,12 @@
   background-image: url("../img/gift-photo-mobile.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  @include above($desktop-width) {
+    padding: 40px;
+    display: flex;
+    align-items: flex-end;
+  }
 }
 
 .present__wrap {
@@ -25,8 +31,4 @@
   color: $basic-white;
   width: 161px;
   text-align: center;
-
-  @include above($tablet-width) {
-
-  }
 }

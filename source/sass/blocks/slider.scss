@@ -1,16 +1,81 @@
-.slider__image-after {
-  display: none;
+.slider__buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 27px;
+  width: 228px;
+
+  @include above($tablet-width) {
+    width: 590px;
+  }
 }
 
 .slider__button {
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 25px;
-}
-
-.slider__slide-button {
   @include font-size (16px, 20px, 400);
   font-family: $primary-text;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.slider__range {
+  width: 84px;
+  position: relative;
+
+  @include above($tablet-width) {
+    width: initial;
+  }
+}
+
+.slider__scale {
+  height: 14px;
+  background-color: $basic-white;
+  border: 1px solid $special-grey;
+  border-radius: 6px;
+
+  @include above($tablet-width) {
+    width: 428px;
+    height: 6px;
+    background-color: $special-grey4;
+    border: none;
+  }
+}
+
+.slider__bar {
+  width: 40%;
+  height: 6px;
+  background-color: $basic-green;
+  border-radius: 6px;
+  margin: 3px 6px;
+
+  @include above($tablet-width) {
+    position: absolute;
+    top: -12px;
+    left: 211px;
+    box-sizing: content-box;
+    width: 8px;
+    height: 8px;
+    border: 10px solid white;
+    background-color: $basic-green;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 $special-grey4;
+  }
+}
+
+.slider__image-before {
+  @include above($tablet-width) {
+    display: inline-block;
+  }
+}
+
+.slider__image-after {
+  display: none;
+
+  @include above($tablet-width) {
+    display: inline-block;
+    margin-left: -14px;
+  }
+
+  @include above($desktop-width) {
+    margin-left: -14px;
+  }
 }

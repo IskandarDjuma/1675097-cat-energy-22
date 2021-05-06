@@ -7,7 +7,7 @@
 
   @include above ($tablet-width) {
     background: none;
-    padding: 64px 0 526px;
+    padding: 0 0 526px;
   }
 
   @include above ($desktop-width) {
@@ -27,7 +27,8 @@
       background-position: right bottom;
       z-index: -1;
     }
-    padding: 111px 0 267px;
+    padding: 0 0 267px;
+    margin-bottom: 82px;
   }
 }
 
@@ -80,14 +81,14 @@
 .promo__img {
   @include above ($tablet-width) {
     position: absolute;
-    top: 259px;
-    left: 242px;
+    top: 182px;
+    left: 74px;
     z-index: -1;
   }
 
   @include above ($desktop-width) {
-    top: 49px;
-    left: 538px;
+    top: 0;
+    left: 365px;
     z-index: -1;
   }
 }

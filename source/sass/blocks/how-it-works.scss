@@ -19,11 +19,14 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-left: 75px;
+  counter-reset: numbers;
 
   @include above($tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 37px 60px;
+    gap: 37px 150px;
+    padding: 0;
   }
 
   @include above($desktop-width) {
@@ -34,9 +37,76 @@
 
 .how-it-works__item {
   margin-bottom: 20px;
+  position: relative;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 220px;
+    width: 60px;
+    height: 60px;
+    background-color: $basic-green;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 30px;
+  }
+
+  &--useful {
+    &::before {
+      background-image: url("../img/icon/icon_leaf.svg");
+    }
+  }
+
+  &--powder {
+    &::before {
+      background-image: url("../img/icon/icon_tub.svg");
+    }
+  }
+
+  &--replacement {
+    &::before {
+      background-image: url("../img/icon/icon_eat.svg");
+    }
+  }
+
+  &--changes {
+    &::before {
+      background-image: url("../img/icon/icon_alarm.svg");
+    }
+  }
+
+  @include above($tablet-width) {
+    counter-increment: numbers;
+    margin-bottom: 0;
+
+    &::before {
+      top: 50px;
+      left: 0;
+      right: initial;
+      width: 80px;
+      height: 80px;
+      background-size: 50px 50px;
+    }
+
+    &::after {
+      content: counter(numbers);
+      position: absolute;
+      top: 0;
+      left: 120px;
+      z-index: -1;
+      font-size: 280px;
+      line-height: 280px;
+      font-family: $primary-text;
+      vertical-align: top;
+      color: $basic-grey;
+
+      @include font-size (280px, 280px, 400);
+    }
   }
 }
 
@@ -46,5 +116,8 @@
 
   @include above($tablet-width) {
     @include font-size (16px, 24px, 400);
+    padding-top: 151px;
+    padding-right: 29px;
+    padding-bottom: 57px;
   }
 }
