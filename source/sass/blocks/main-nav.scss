@@ -18,6 +18,14 @@
       display: block;
     }
   }
+
+  @include above($tablet-width) {
+    width: 70%;
+  }
+
+  @include above($desktop-width) {
+    width: 50%;
+  }
 }
 
 .main-nav__list {

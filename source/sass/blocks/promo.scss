@@ -1,46 +1,25 @@
 .promo {
-  background-image: url("../img/bg-cat-mobile.png"), linear-gradient(to bottom, #62a53a 60.8%, transparent 60.8%, transparent 100%);
+  background-image: url("../img/bg-cat-mobile.png"), linear-gradient(to bottom, $basic-green100 60.8%, transparent 60.8%, transparent 100%);
   background-repeat: no-repeat;
   background-position: 50% 0;
   padding: 27px 0 22px;
   position: relative;
 
   @include above ($tablet-width) {
+    position: relative;
     background: none;
     padding: 0 0 526px;
   }
 
   @include above ($desktop-width) {
-    &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      width: calc(100% / 2);
-      height: 694px;
-      top: -150px;
-      right: 0;
-      bottom: 0;
-      background-color: #64a73c;
-      background-image: url("../img/bg-cat-mobile.png");
-      background-size: 694px auto;
-      background-repeat: no-repeat;
-      background-position: right bottom;
-      z-index: -1;
-    }
     padding: 0 0 267px;
     margin-bottom: 82px;
   }
 }
 
 .promo__wrapper {
-  position: relative;
-
   @include above ($tablet-width) {
     padding-left: 117px;
-  }
-
-  .button {
-    margin-top: auto;
   }
 }
 
@@ -81,15 +60,21 @@
 .promo__img {
   @include above ($tablet-width) {
     position: absolute;
-    top: 182px;
-    left: 74px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 709;
+    height: 609px;
     z-index: -1;
   }
 
   @include above ($desktop-width) {
-    top: 0;
-    left: 365px;
-    z-index: -1;
+    left: 50%;
+    bottom: auto;
+    top: -50px;
+    width: 552px;
+    height: 499px;
+    transform: translateX(-50%);
   }
 }
 

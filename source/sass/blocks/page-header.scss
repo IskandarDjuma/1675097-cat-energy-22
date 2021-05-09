@@ -1,28 +1,67 @@
 .page-header {
+  padding-top: 24px;
   min-height: 66px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  padding-top: 11px;
 
   @include above ($tablet-width) {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 42px 0 62px;
+    padding-top: 42px;
+    padding-bottom: 62px;
+  }
+
+  @include above ($desktop-width) {
+    position: relative;
+  }
+
+  &::before {
+    @include above ($desktop-width) {
+      content: "";
+      position: absolute;
+      width: calc(100% / 2);
+      height: 720px;
+      top: 0;
+      right: 0;
+      background-color: $basic-green200;
+      background-image: url("../img/bg-cat-mobile.png");
+      background-size: contain, 100%;
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      z-index: -1;
+    }
   }
 }
 
 .page-header__wrapper {
+  padding-bottom: 20px;
+
+  @include above ($tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.page-header__wrap {
   display: flex;
-  justify-content: space-between;
+  width: 100%;
   align-items: center;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
+
+  @include above ($tablet-width) {
+    width: auto;
+    margin-bottom: 0;
+  }
 }
 
 .page-header__logo {
   display: flex;
   justify-content: space-between;
   width: 70%;
+
+  @include above ($tablet-width) {
+    min-width: 174px;
+  }
+
+  @include above ($tablet-width) {
+    min-width: 202px;
+  }
 }
 
 .page-header__toggle {

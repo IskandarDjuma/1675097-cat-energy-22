@@ -9,29 +9,31 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header container">
-    <div class="page-header__wrapper">
-      <a class="page-header__logo logo">
-        <img class="page-header__logo-image" src="img/logo-img.svg" width="33" height="37" alt="Логотип компании">
-        <img class="page-header__logo-title" src="img/logo-text.svg" width="101" height="18" alt="Cat-Energy">
-      </a>
-      <button class="page-header__toggle page-header__toggle--open" type="button">
-        <span class="visually-hidden">Открыть/закрыть меню</span>
-      </button>
+  <header class="page-header">
+    <div class="container page-header__wrapper">
+      <div class="page-header__wrap">
+        <a class="page-header__logo logo">
+          <img class="page-header__logo-image" src="img/logo-img.svg" width="33" height="37" alt="Логотип компании">
+          <img class="page-header__logo-title" src="img/logo-text.svg" width="101" height="18" alt="Cat-Energy">
+        </a>
+        <button class="page-header__toggle page-header__toggle--open" type="button">
+          <span class="visually-hidden">Открыть/закрыть меню</span>
+        </button>
+      </div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <ul class="main-nav__list site-list site-list--white">
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav class="main-nav main-nav--closed main-nav--nojs">
-      <ul class="main-nav__list site-list site-list--white">
-        <li class="site-list__item site-list__item--active">
-          <a class="site-list__link">Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="form.html">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">
@@ -134,18 +136,19 @@
           </div>
         </div>
         <div class="example-slider slider">
-          <div class="slider__image-before">
+          <div class="slider__images">
+            <div class="slider__image-before">
             <picture>
-              <source media="(min-width: 1300px)" srcset="img/before-half-desktop.png">
-              <source media="(min-width: 768px)" srcset="img/before-half-desktop.png">
-              <img src="img/cat-fat.png" width="311" height="232" alt="Фотография толстого кота до приема программы питания">
+              <source media="(min-width: 1300px)" srcset="img/cat-fat.png">
+              <source media="(min-width: 768px)" srcset="img/cat-fat.png">
+              <img class="slider__img" src="img/cat-fat.png" width="311" height="232" alt="Фотография толстого кота до приема программы питания">
             </picture>
           </div>
           <div class="slider__image-after">
             <picture>
-              <source media="(min-width: 1300px)" srcset="img/after-half-desktop.png">
-              <source media="(min-width: 768px)" srcset="img/after-half-desktop.png">
-              <img class="slider__image-after" src="img/cat-skinny.png" width="311" height="232" alt="Фотография похудевшего кота после приема программы питания">
+              <source media="(min-width: 1300px)" srcset="img/cat-skinny.png">
+              <source media="(min-width: 768px)" srcset="img/cat-skinny.png">
+              <img class="slider__img" src="img/cat-skinny.png" width="311" height="232" alt="Фотография похудевшего кота после приема программы питания">
             </picture>
 
           </div>
@@ -153,13 +156,14 @@
             <button class="slider__button button" type="button">Было</button>
             <div class="slider__range">
               <div class="slider__scale">
-                <div class="slider__bar" tabindex="0"></div>
+                <div class="slider__thumb" tabindex="0"></div>
               </div>
             </div>
             <button class="slider__button button" type="button">Стало</button>
           </div>
         </div>
       </div>
+    </div>
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
