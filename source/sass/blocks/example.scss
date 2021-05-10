@@ -1,6 +1,16 @@
 .example {
   background-color: $special-grey-bg;
   padding: 27px 0 25px;
+
+  @include above($tablet-width) {
+    background-color: $basic-white;
+    background-image: linear-gradient(to bottom, $basic-white 57%, $special-grey-bg 57%, $special-grey-bg 100%);
+  }
+
+  @include above($desktop-width) {
+    background-image: linear-gradient(to bottom, $basic-white 20%, $special-grey-bg 20%, $special-grey-bg 100%);
+    padding: 0;
+  }
 }
 
 .example-wrapper {
@@ -23,6 +33,10 @@
     @include font-size (60px, 60px, 400);
     margin-bottom: 63px;
   }
+
+  @include above($desktop-width) {
+    margin-bottom: 146px;
+  }
 }
 
 .example__description {
@@ -37,12 +51,14 @@
 
   @include above($desktop-width) {
     width: 436px;
+    margin-bottom: 63px;
   }
 }
 
 .example__stats {
   @include above($tablet-width) {
     display: flex;
+    align-items: center;
   }
 
   @include above($desktop-width) {
