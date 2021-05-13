@@ -1,5 +1,6 @@
 .page-header {
   padding-top: 24px;
+  padding-bottom: 1px;
   min-height: 66px;
 
   @include above ($tablet-width) {
@@ -11,7 +12,7 @@
     position: relative;
   }
 
-  &::before {
+  &--index::before {
     @include above ($desktop-width) {
       content: "";
       position: absolute;
@@ -30,8 +31,6 @@
 }
 
 .page-header__wrapper {
-  padding-bottom: 20px;
-
   @include above ($tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -104,6 +103,10 @@
       content: "";
       transform: rotate(-45deg);
     }
+  }
+
+  &--nojs {
+    display: none;
   }
 
   @include above ($tablet-width) {

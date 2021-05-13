@@ -5,6 +5,7 @@
   text-transform: uppercase;
   border: 1px solid $basic-grey200;
   padding: 13px 15px;
+  outline: none;
 
   &:hover {
     border-color: $special-grey;
@@ -12,11 +13,13 @@
 
   &:focus {
     border-color: $special-dark-grey;
+    box-shadow: inset 0 0 0 1px $special-dark-grey;
   }
 
   &::placeholder {
     @include font-size (16px, 18px, 400);
     color: $special-dark-grey;
+    opacity: 1;
   }
 
   &--textarea {
@@ -29,6 +32,10 @@
     }
   }
 
+  &--error {
+    border-color: $status-error;
+  }
+
   @include above($tablet-width) {
     @include font-size (20px, 30px, 400);
     padding: 10px 15px;
@@ -37,4 +44,27 @@
       @include font-size (20px, 30px, 400);
     }
   }
+}
+
+.text-field__icon {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  transform: translate(100%, -50%);
+
+  @include above($tablet-width) {
+    &--mail {
+      width: 18px;
+      height: 13px;
+    }
+
+    &--phone {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.text-field:focus + .text-field__icon {
+  color: $basic-green;
 }

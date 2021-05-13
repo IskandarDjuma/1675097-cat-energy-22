@@ -2,11 +2,12 @@
   @include list-reset;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 22px;
   width: 100%;
   padding: 20px 60px;
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid $basic-light-grey;
+  border-bottom: 1px solid $basic-light-grey;
 
   @include above($tablet-width) {
     margin-bottom: 0;
@@ -16,5 +17,35 @@
 
   @include above($desktop-width) {
     width: 20%;
+  }
+}
+
+.social-list__icon {
+  color: $special-grey3;
+
+  &:hover,
+  &:focus {
+    color: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @include above($tablet-width) {
+    &--vkontakte {
+      width: 30px;
+      height: 22px;
+    }
+
+    &--instagram {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--facebook {
+      width: 28px;
+      height: 33px;
+    }
   }
 }

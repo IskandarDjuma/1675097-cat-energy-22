@@ -49,14 +49,13 @@
   @include font-size (12px, 12px, 400);
   text-align: center;
   width: min-content;
-  margin: 0 35px;
+  margin: 0 auto;
   background-color: $special-grey-bg;
   padding: 0 15px;
 
   @include above($tablet-width) {
     @include font-size (14px, 14px, 400);
     width: max-content;
-    margin: 0 10px;
     padding: 0 8px;
     background-color: $basic-white;
   }

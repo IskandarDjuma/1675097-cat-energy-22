@@ -1,10 +1,19 @@
 .program-selection {
-  padding: 27px 0 32px;
+  padding-top: 27px;
+  padding-bottom: 32px;
+
+  @include above($tablet-width) {
+    padding-top: 0;
+  }
+
+  @include above($desktop-width) {
+    padding-bottom: 82px;
+  }
 }
 
-.program-selection-wrapper {
+.program-selection__wrapper {
   @include above($tablet-width) {
-    padding-left: 40px;
+    padding-left: 70px;
   }
 
   @include above($desktop-width) {

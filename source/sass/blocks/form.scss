@@ -21,11 +21,11 @@
   font-family: $primary-text;
   text-transform: uppercase;
   align-self: center;
+  flex: 0 0 auto;
+  margin-right: 10px;
 
   @include above($tablet-width) {
     @include font-size (20px, 30px, 400);
-    flex: 0 0 auto;
-    margin-right: 10px;
   }
 
   @include above($desktop-width) {
@@ -38,7 +38,8 @@
   padding: 0;
   margin: 0;
   border: none;
-  margin-bottom: 22px;
+  margin-bottom: 30px;
+  position: relative;
 
   &:last-child {
     margin-bottom: 0;
@@ -56,8 +57,36 @@
   }
 
   &--program {
+    padding: 20px 0;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      right: 50%;
+      left: 50%;
+      width: 100vw;
+      height: 1px;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      background-color: $basic-light-grey;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+
     @include above($tablet-width) {
       margin-bottom: 69px;
+
+      &::before,
+      &::after {
+        display: none;
+      }
     }
 
     @include above($desktop-width) {
@@ -118,30 +147,56 @@
 
 .form__input {
   width: 100%;
+
+  &[type="number"]::-webkit-outer-spin-button,
+  &[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
 }
 
 .form__legend {
   @include font-size (24px, 26px, 400);
+
   font-family: $primary-text;
   color: $basic-black;
   padding: 0;
+  padding-right: 22px;
   margin-bottom: 35px;
 
   @include above($tablet-width) {
     @include font-size (36px, 36px, 400);
     margin-bottom: 76px;
   }
+
+  span {
+    display: block;
+
+    @include above($tablet-width) {
+      display: inline;
+    }
+  }
 }
 
 .form__row {
+  position: relative;
+
   @include above($desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
 
-    &-list {
+    .form__field {
       margin-bottom: 0;
     }
+  }
+}
+
+.form__field--icon {
+  position: relative;
+
+  .form__input {
+    flex-grow: 1;
   }
 }
 
@@ -154,10 +209,23 @@
 .form__submit {
   @include above($tablet-width) {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
   }
 
   @include above($desktop-width) {
-    width: 100%;
+    grid-column: 1/-1;
+  }
+}
+
+.form__button {
+  width: 100%;
+
+  @include above($tablet-width) {
+    width: 40%;
+    margin-right: 60px;
+  }
+
+  @include above($tablet-width) {
+    margin-right: 180px;
   }
 }
