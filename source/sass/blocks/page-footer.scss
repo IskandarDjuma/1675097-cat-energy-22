@@ -22,6 +22,16 @@
 .page-footer__logo {
   text-align: center;
   margin-bottom: 32px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 
   @include above($tablet-width) {
     margin-bottom: 0;

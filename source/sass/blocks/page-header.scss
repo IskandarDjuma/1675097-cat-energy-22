@@ -105,6 +105,10 @@
     }
   }
 
+  &--nojs {
+    display: none;
+  }
+
   @include above ($tablet-width) {
     display: none;
   }

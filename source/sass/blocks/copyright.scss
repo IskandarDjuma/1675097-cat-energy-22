@@ -1,7 +1,11 @@
-.copyright {
+.copyright__link {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .copyright__text {
@@ -9,4 +13,13 @@
   font-family: $secondary-text;
   color: $special-dark-grey;
   margin: 0;
+}
+
+.copyright__link-svg {
+  color: $special-grey3;
+
+  &:hover,
+  &:focus {
+    color: $basic-green;
+  }
 }
