@@ -39,6 +39,7 @@
   margin: 0;
   border: none;
   margin-bottom: 30px;
+  position: relative;
 
   &:last-child {
     margin-bottom: 0;
@@ -57,11 +58,35 @@
 
   &--program {
     padding: 20px 0;
-    border-top: 1px solid $basic-light-grey;
-    border-bottom: 1px solid $basic-light-grey;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      right: 50%;
+      left: 50%;
+      width: 100vw;
+      height: 1px;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      background-color: $basic-light-grey;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
 
     @include above($tablet-width) {
       margin-bottom: 69px;
+
+      &::before,
+      &::after {
+        display: none;
+      }
     }
 
     @include above($desktop-width) {
@@ -122,44 +147,34 @@
 
 .form__input {
   width: 100%;
+
+  &[type="number"]::-webkit-outer-spin-button,
+  &[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
 }
 
 .form__legend {
   @include font-size (24px, 26px, 400);
 
-  display: flex;
-  align-items: center;
   font-family: $primary-text;
   color: $basic-black;
   padding: 0;
+  padding-right: 22px;
   margin-bottom: 35px;
-  width: 100%;
-
-  &::before,
-  &::after {
-    content: "";
-    flex-grow: 1;
-    flex-shrink: 0;
-    height: 2px;
-    background: $basic-green;
-  }
-
-  &::before {
-    display: none;
-
-    @include above($tablet-width) {
-      display: block;
-      margin-right: 30px;
-    }
-  }
-
-  &::after {
-    margin-left: 20px;
-  }
 
   @include above($tablet-width) {
     @include font-size (36px, 36px, 400);
     margin-bottom: 76px;
+  }
+
+  span {
+    display: block;
+
+    @include above($tablet-width) {
+      display: inline;
+    }
   }
 }
 
@@ -171,15 +186,18 @@
     grid-template-columns: 1fr 1fr;
     gap: 80px;
 
-    &-list {
+    .form__field {
       margin-bottom: 0;
     }
   }
 }
 
-.form-row__input-wrapper {
+.form__field--icon {
   position: relative;
-  flex: 1 0 auto;
+
+  .form__input {
+    flex-grow: 1;
+  }
 }
 
 .form__required {

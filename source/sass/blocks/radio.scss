@@ -53,3 +53,12 @@
   background-color: $basic-green;
   border-radius: 50%;
 }
+
+.radio__input:hover + .radio__label,
+.radio__input:focus + .radio__label {
+  color: $special-dark-grey;
+}
+
+.radio__input:focus-visible + .radio__label::before {
+  outline: 5px auto -webkit-focus-ring-color;
+}
