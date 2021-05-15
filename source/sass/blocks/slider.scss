@@ -1,4 +1,5 @@
 .slider__buttons {
+  position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -16,6 +17,7 @@
   text-transform: uppercase;
   cursor: pointer;
   border-bottom: 1px dotted $special-grey3;
+  z-index: 3;
 
   &:hover,
   &:focus {
@@ -32,6 +34,7 @@
 }
 
 .slider__range {
+  z-index: 3;
   width: 84px;
   position: relative;
 
