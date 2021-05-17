@@ -13,8 +13,11 @@
     <div class="container page-header__wrapper">
       <div class="page-header__wrap">
         <a class="page-header__logo logo">
-          <img class="page-header__logo-image" src="img/logo-img.svg" width="33" height="37" alt="Логотип компании">
-          <img class="page-header__logo-title" src="img/logo-text.svg" width="101" height="18" alt="Cat-Energy">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+            <img class="logo__image" src="img/logo/main-mobile-logo.svg" width="190" height="37" alt="Логотип компании">
+          </picture>
         </a>
         <button class="page-header__toggle page-header__toggle--open" type="button">
           <span class="visually-hidden">Открыть/закрыть меню</span>
@@ -46,9 +49,9 @@
           Занялся собой? Займись котом!
         </p>
         <picture>
-          <source media="(min-width: 1300px)" srcset="img/index-can-desktop.png">
-          <source media="(min-width: 768px)" srcset="img/index-can-tablet.png">
-          <img class="promo__img" src="img/index-can-mobile.png" alt="">
+          <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+          <img class="promo__img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Корм для кошек Cat Energy Pro">
         </picture>
         <a class="promo__button button button--primary" href="form.html">Подобрать программу</a>
       </div>
@@ -139,16 +142,14 @@
           <div class="slider__images">
             <div class="slider__image-before">
               <picture>
-                <source media="(min-width: 1300px)" srcset="img/cat-fat.png">
-                <source media="(min-width: 768px)" srcset="img/cat-fat.png">
-                <img class="slider__img" src="img/cat-fat.png" width="311" height="232" alt="Фотография толстого кота до приема программы питания">
+                <source media="(min-width: 768px)" srcset="img/cat-fat-tablet@1x.png 1x, img/cat-fat-tablet@2x.png 2x">
+                <img class="slider__img" src="img/cat-fat-mobile@1x.png 1x" srcset="img/cat-fat-mobile@2x.png 2x" width="311" height="232" alt="Фотография толстого кота до приема программы питания">
               </picture>
             </div>
             <div class="slider__image-after">
               <picture>
-                <source media="(min-width: 1300px)" srcset="img/cat-skinny.png">
-                <source media="(min-width: 768px)" srcset="img/cat-skinny.png">
-                <img class="slider__img" src="img/cat-skinny.png" width="311" height="232" alt="Фотография похудевшего кота после приема программы питания">
+                <source media="(min-width: 768px)" srcset="img/cat-skinny-tablet@1x.png 1x, img/cat-skinny-tablet@2x.png 2x ">
+                <img class="slider__img" src="img/cat-skinny-mobile@1x.png 1x" srcset="img/cat-skinny-mobile@2x.png" width="311" height="232" alt="Фотография похудевшего кота после приема программы питания">
               </picture>
             </div>
             <div class="slider__buttons">
