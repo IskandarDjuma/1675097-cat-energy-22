@@ -27,7 +27,7 @@
       background-position: right bottom;
       z-index: -1;
 
-      @media (min-resolution: $retina-dpi) {
+      @include retina ($retina-dpi, $retina-dppx) {
         background-image: url("../img/mobile-bg-cat@2x.jpg"), linear-gradient(to bottom, $basic-green100 60.8%, transparent 60.8%, transparent 100%);
       }
     }

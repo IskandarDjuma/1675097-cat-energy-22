@@ -65,7 +65,7 @@
   background-size: cover;
   background-position: center;
 
-  @media (min-resolution: $retina-dpi) {
+  @include retina ($retina-dpi, $retina-dppx) {
     background-image: url("../img/map/map-mobile@2x.png");
   }
 
@@ -73,7 +73,7 @@
     min-height: 400px;
     background-image: url("../img/map/map-tablet@1x.png");
 
-    @media (min-resolution: $retina-dpi) {
+    @include retina ($retina-dpi, $retina-dppx) {
       background-image: url("../img/map/map-tablet@2x.png");
     }
   }
@@ -81,7 +81,7 @@
   @include above($desktop-width) {
     background-image: url("../img/map/map-desktop@1x.png");
 
-    @media (min-resolution: $retina-dpi) {
+    @include retina ($retina-dpi, $retina-dppx) {
       background-image: url("../img/map/map-desktop@2x.png");
     }
   }
