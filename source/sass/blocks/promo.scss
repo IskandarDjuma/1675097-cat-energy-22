@@ -1,9 +1,15 @@
 .promo {
-  background-image: url("../img/bg-cat-mobile.png"), linear-gradient(to bottom, $basic-green100 60.8%, transparent 60.8%, transparent 100%);
+  background-color: $basic-white;
+  background-image: url("../img/mobile-bg-cat@1x.jpg"), linear-gradient(to bottom, $basic-green100 60.8%, transparent 60.8%, transparent 100%);
   background-repeat: no-repeat;
   background-position: 50% 0;
   padding: 27px 0 22px;
   position: relative;
+
+  @media (min-resolution: $retina-dpi) {
+    background-image: url("../img/mobile-bg-cat@2x.jpg"), linear-gradient(to bottom, $basic-green100 60.8%, transparent 60.8%, transparent 100%);
+    background-size: 320px auto, auto;
+  }
 
   @include above ($tablet-width) {
     position: relative;

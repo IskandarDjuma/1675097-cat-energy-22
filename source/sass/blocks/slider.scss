@@ -68,16 +68,26 @@
 
   @include above($tablet-width) {
     position: absolute;
-    top: -12px;
+    top: 50%;
     left: 50%;
-    box-sizing: content-box;
-    width: 8px;
-    height: 8px;
-    border: 10px solid $basic-white;
-    background-color: $basic-green;
+    width: 34px;
+    height: 34px;
+    background-color: $basic-white;
+    border: 1px solid $special-grey;
     border-radius: 50%;
-    box-shadow: 0 2px 1px 0 $special-grey4;
-    cursor: pointer;
+    transform: translateX(-50%) translateY(-50%);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 8px;
+      height: 8px;
+      background-color: $basic-green;
+      border-radius: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
 
     &:hover {
       box-shadow: 0 5px 3px 0 $special-grey4;
