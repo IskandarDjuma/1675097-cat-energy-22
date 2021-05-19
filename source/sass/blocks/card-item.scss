@@ -1,4 +1,5 @@
 .card-item {
+  position: relative;
   display: grid;
   align-items: start;
   grid-template-columns: 1fr 1fr;
@@ -8,6 +9,23 @@
     padding: 30px 35px;
     background-image: linear-gradient(to bottom, $basic-white 100px, $basic-grey 100px, $basic-grey);
     min-height: 511px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 1px;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-color: $basic-light-grey;
+
+    @include above($tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -111,5 +129,18 @@
 
   @include above($tablet-width) {
     padding: 10px 35px;
+  }
+}
+
+.card-content__image {
+  width: 140px;
+  height: auto;
+
+  @include above($tablet-width) {
+    width: 324px;
+  }
+
+  @include above($desktop-width) {
+    width: 245px;
   }
 }

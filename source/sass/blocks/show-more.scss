@@ -1,11 +1,11 @@
 .show-more {
   display: block;
   min-height: 210px;
-  padding: 20px 0;
   background-image: url("../img/icon/icon-plus.svg");
   background-repeat: no-repeat;
   background-position: center 25px;
   background-size: 30px 30px;
+  padding: 0;
 
   @include above($tablet-width) {
     margin-top: 100px;
@@ -17,7 +17,7 @@
 }
 
 .show-more__wrap {
-  padding: 53px 0 35px;
+  padding: 80px 0 35px;
 
   @include above($tablet-width) {
     padding: 161px 35px 38px;

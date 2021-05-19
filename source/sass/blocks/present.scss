@@ -3,9 +3,14 @@
   padding: 186px 60px 43px;
   min-height: 289px;
   background-color: $basic-green;
-  background-image: url("../img/gift-photo-mobile.jpg");
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-size: contain;
+
+  @include retina {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
 
   @include above($tablet-width) {
     min-height: 200px;
@@ -13,7 +18,11 @@
     padding-top: 70px;
     padding-right: 120px;
     padding-left: 425px;
-    background-image: url("../img/gift-photo-tablet.png");
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+    @include retina {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
   }
 
   @include above($desktop-width) {
@@ -21,7 +30,12 @@
     padding: 40px;
     display: flex;
     align-items: flex-end;
-    background-image: url("../img/gift-photo-mobile.jpg");
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    background-size: cover;
+
+    @include retina {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
   }
 
   &::before {
