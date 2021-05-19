@@ -3,16 +3,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <title>Каталог</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <title>Каталог продукции</title>
 </head>
 <body class="page__body">
   <header class="page-header page-header--inner">
     <div class="container page-header__wrapper">
       <div class="page-header__wrap">
         <a class="page-header__logo logo" href="index.html">
-          <img class="page-header__logo-image" src="img/logo-img.svg" width="33" height="37"
-            alt="Логотип компании">
-          <img class="page-header__logo-title" src="img/logo-text.svg" width="101" height="18" alt="Cat-Energy">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+            <img class="logo__image" src="img/logo/main-mobile-logo.svg" width="190" height="37" alt="Логотип компании">
+          </picture>
         </a>
         <button class="page-header__toggle page-header__toggle--open" type="button">
           <span class="visually-hidden">Открыть/закрыть меню</span>
@@ -65,8 +71,12 @@
             </dl>
           </div>
           <div class="card-content__img card-content__img--small">
-            <a  href="#">
-              <img src="../img/product-img/catalog-chiken-small.png" width="68" height="86" alt="Маленькая упаковка оранжевого цвета">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="../img/product-img/chicken-small-desktop@1x.png, ../img/product-img/chicken-small-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="../img/product-img/chicken-small-tablet@1x.png, ../img/product-img/chicken-small-tablet@2x.png 2x">
+                <img class="card-content__image" src="../img/product-img/chicken-small-mobile@1x.png" srcset="../img/product-img/chicken-small-mobile@2x.png 2x" width="140" height="112" alt="Маленькая упаковка оранжевого цвета">
+              </picture>
             </a>
           </div>
           <a class="button button--primary card-content__link" href="#">Заказать</a>
@@ -94,7 +104,11 @@
             </dl>
           </div>
           <div class="card-content__img card-content__img--big">
-            <img src="../img/product-img/catalog-chiken-big.png" width="84" height="100" alt="Большая упаковка оранжевого цвета">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="../img/product-img/chicken-big-desktop@1x.png, ../img/product-img/chicken-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="../img/product-img/chicken-big-tablet@1x.png, ../img/product-img/chicken-big-tablet@2x.png 2x">
+              <img class="card-content__image" src="../img/product-img/chicken-big-mobile@1x.png" srcset="../img/product-img/chicken-big-mobile@2x.png 2x" width="140" height="112" alt="Большая упаковка оранжевого цвета">
+            </picture>
           </div>
           <a class="button button--primary card-content__link" href="#">Заказать</a>
         </li>
@@ -121,7 +135,11 @@
             </dl>
           </div>
           <div class="card-content__img card-content__img--small">
-            <img src="../img/product-img/catalog-fish-small.png" width="68" height="86" alt="Маленькая упаковка зеленного цвета">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="../img/product-img/fish-small-desktop@1x.png, ../img/product-img/fish-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="../img/product-img/fish-small-tablet@1x.png, ../img/product-img/fish-small-tablet@2x.png 2x">
+              <img class="card-content__image" src="../img/product-img/fish-small-mobile@1x.png" srcset="../img/product-img/fish-small-mobile@2x.png 2x" width="140" height="112" alt="Маленькая упаковка зеленного цвета">
+            </picture>
           </div>
           <a class="button button--primary card-content__link" href="#">Заказать</a>
         </li>
@@ -148,7 +166,11 @@
             </dl>
           </div>
           <div class="card-content__img card-content__img--big">
-            <img src="../img/product-img/catalog-fish-big.png" width="84" height="100" alt="Большая упаковка оранжевого цвета">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="../img/product-img/fish-big-desktop@1x.png, ../img/product-img/fish-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="../img/product-img/fish-big-tablet@1x.png, ../img/product-img/fish-big-tablet@2x.png 2x">
+              <img class="card-content__image" src="../img/product-img/fish-big-mobile@1x.png" srcset="../img/product-img/fish-big-mobile@2x.png 2x" width="140" height="112" alt="Большая упаковка оранжевого цвета">
+            </picture>
           </div>
           <a class="button button--primary card-content__link" href="#">Заказать</a>
         </li>
@@ -175,7 +197,11 @@
             </dl>
           </div>
           <div class="card-content__img card-content__img--small">
-            <img src="../img/product-img/catalog-buckwheat-small.png" width="68" height="86" alt="Маленькая упаковка голубого цвета">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="../img/product-img/buckwheat-small-desktop@1x.png, ../img/product-img/buckwheat-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="../img/product-img/buckwheat-small-tablet@1x.png, ../img/product-img/buckwheat-small-tablet@2x.png 2x">
+              <img class="card-content__image" src="../img/product-img/buckwheat-small-mobile@1x.png" srcset="../img/product-img/buckwheat-small-mobile@2x.png 2x" width="140" height="112" alt="Маленькая упаковка голубого цвета">
+            </picture>
           </div>
           <a class="button button--primary card-content__link" href="#">Заказать</a>
         </li>
@@ -202,7 +228,11 @@
             </dl>
           </div>
           <div class="card-content__img card-content__img--big">
-            <img src="../img/product-img/catalog-buckwheat-big.png" width="84" height="100" alt="Большая упаковка голубого цвета">
+            <picture>
+              <source media="(min-width: 768px)" srcset="../img/product-img/buckwheat-big-desktop@1x.png, ../img/product-img/buckwheat-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="../img/product-img/buckwheat-big-tablet@1x.png, ../img/product-img/buckwheat-big-tablet@2x.png 2x">
+              <img class="card-content__image" src="../img/product-img/buckwheat-big-mobile@1x.png" srcset="../img/product-img/buckwheat-big-mobile@2x.png 2x" width="140" height="112" alt="Большая упаковка голубого цвета">
+            </picture>
           </div>
           <a class="button button--primary card-content__link" href="#">Заказать</a>
         </li>
@@ -229,7 +259,11 @@
             </dl>
           </div>
           <div class="card-content__img card-content__img--small">
-            <img src="../img/product-img/catalog-rice-small.png" width="68" height="86" alt="Маленькая упаковка фиолетового цвета">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="../img/product-img/rice-small-desktop@1x.png, ../img/product-img/rice-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="../img/product-img/rice-small-tablet@1x.png, ../img/product-img/rice-small-tablet@2x.png 2x">
+              <img class="card-content__image" src="../img/product-img/rice-small-mobile@1x.png" srcset="../img/product-img/rice-small-mobile@2x.png 2x" width="140" height="112" alt="Маленькая упаковка фиолетового цвета">
+            </picture>
           </div>
           <a class="button button--primary card-content__link" href="#">Заказать</a>
         </li>

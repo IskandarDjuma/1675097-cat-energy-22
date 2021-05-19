@@ -22,7 +22,7 @@
   }
 }
 
-@mixin retina($bp, $bp) {
+@mixin retina() {
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     @content;
   }
