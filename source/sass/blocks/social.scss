@@ -20,7 +20,7 @@
   }
 }
 
-.social-list__icon {
+.social-list__link {
   color: $special-grey3;
 
   &:hover,
@@ -31,7 +31,9 @@
   &:active {
     opacity: 0.6;
   }
+}
 
+.social-list__icon {
   @include above($tablet-width) {
     &--vkontakte {
       width: 30px;

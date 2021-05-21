@@ -51,6 +51,7 @@
   top: 50%;
   right: 32px;
   transform: translate(100%, -50%);
+  fill: none;
 
   @include above($tablet-width) {
     &--mail {

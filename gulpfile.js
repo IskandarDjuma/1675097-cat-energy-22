@@ -22,6 +22,7 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
+    .pipe(gulp.dest("build/css"))
     .pipe(postcss([
       autoprefixer(),
       csso()
@@ -86,7 +87,7 @@ const createWebp = () => {
 
 exports.createWebp = createWebp;
 
-// Sprite 
+// Sprite
 const sprite = () => {
   return gulp.src("source/img/icons/*.svg")
   .pipe(svgstore ({
@@ -104,6 +105,7 @@ const copy = (done) => {
   gulp.src([
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
+    "source/*.webmanifest",
     "source/**/*.svg",
     "!source/img/icons/*.svg",
   ], {

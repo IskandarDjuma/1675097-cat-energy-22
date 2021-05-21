@@ -46,14 +46,14 @@
   left: -38px;
   width: 18px;
   height: 14px;
-  background-image: url("../img/icon/checked-icon.svg");
+  background-image: url("../img/checked-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.checkbox__input:hover + .checkbox__label,
-.checkbox__input:focus + .checkbox__label {
-  color: $special-dark-grey;
+.checkbox__input:hover + .checkbox__label::before,
+.checkbox__input:focus + .checkbox__label::before {
+  border: 1px solid $basic-grey300;
 }
 
 .checkbox__input:focus-visible + .checkbox__label::before {
