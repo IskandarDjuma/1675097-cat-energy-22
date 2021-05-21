@@ -1,7 +1,7 @@
 .show-more {
   display: block;
   min-height: 210px;
-  background-image: url("../img/icon/icon-plus.svg");
+  background-image: url("../img/icon-plus.svg");
   background-repeat: no-repeat;
   background-position: center 25px;
   background-size: 30px 30px;
@@ -21,7 +21,7 @@
 
   @include above($tablet-width) {
     padding: 161px 35px 38px;
-    background-image: url("../img/icon/icon-plus.svg");
+    background-image: url("../img/icon-plus.svg");
     background-repeat: no-repeat;
     background-position: center 55px;
     background-size: 60px 60px;
