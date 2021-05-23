@@ -1,8 +1,8 @@
 .cards {
   display: grid;
-  gap: 10px;
+  gap: 20px;
   align-items: start;
-  margin-bottom: 25px;
+  margin-bottom: 12px;
   position: relative;
 
   @include above($tablet-width) {

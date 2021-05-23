@@ -8,7 +8,7 @@
       "contacts contacts"
       "comments comments"
       "extra extra";
-    gap: 70px 80px;
+    gap: 72px 60px;
   }
 }
 
@@ -22,10 +22,11 @@
   text-transform: uppercase;
   align-self: center;
   flex: 0 0 auto;
-  margin-right: 10px;
+  margin-right: 11px;
 
   @include above($tablet-width) {
     @include font-size (20px, 30px, 400);
+    margin-right: 18px;
   }
 
   @include above($desktop-width) {
@@ -47,7 +48,7 @@
 
   &--name {
     @include above($tablet-width) {
-      margin-bottom: 78px;
+      margin-bottom: 88px;
     }
 
     @include above($desktop-width) {
@@ -57,7 +58,8 @@
   }
 
   &--program {
-    padding: 20px 0;
+    padding: 28px 0;
+    margin-bottom: 26px;
 
     &::before,
     &::after {
@@ -81,7 +83,7 @@
     }
 
     @include above($tablet-width) {
-      margin-bottom: 69px;
+      margin-bottom: 74px;
 
       &::before,
       &::after {
@@ -97,7 +99,7 @@
 
   &--contacts {
     @include above($tablet-width) {
-      margin-bottom: 65px;
+      margin-bottom: 74px;
     }
 
     @include above($desktop-width) {
@@ -107,6 +109,8 @@
   }
 
   &--comments {
+    margin-bottom: 17px;
+
     @include above($tablet-width) {
       margin-bottom: 65px;
     }
@@ -118,13 +122,23 @@
   }
 
   &--extra {
+    margin-bottom: 20px;
+
     @include above($tablet-width) {
-      margin-bottom: 54px;
+      margin-bottom: 63px;
+
+      .form__legend {
+        margin-bottom: 61px;
+      }
     }
 
     @include above($desktop-width) {
       grid-area: extra;
       margin-bottom: 0;
+
+      .form__legend {
+        margin-bottom: 50px;
+      }
     }
   }
 }
@@ -137,7 +151,7 @@
   // gap: 13px;
 
   &:last-child {
-    margin-bottom: 0;
+    margin-bottom: -9px;
   }
 
   @include above($tablet-width) {
@@ -162,7 +176,7 @@
   color: $basic-black;
   padding: 0;
   padding-right: 22px;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
 
   @include above($tablet-width) {
     @include font-size (36px, 36px, 400);
@@ -204,6 +218,16 @@
   @include font-size (14px, 16px, 400);
   color: $basic-black;
   text-align: center;
+  margin-top: 22px;
+
+  @include above($tablet-width) {
+    @include font-size (16px, 16px, 400);
+    margin-top: 13px;
+  }
+
+  @include above($desktop-width) {
+    margin-top: -14px;
+  }
 }
 
 .form__submit {
@@ -222,10 +246,11 @@
 
   @include above($tablet-width) {
     width: 40%;
-    margin-right: 60px;
+    margin-right: 77px;
   }
 
-  @include above($tablet-width) {
-    margin-right: 180px;
+  @include above($desktop-width) {
+    margin-right: 74px;
+    width: 47%;
   }
 }

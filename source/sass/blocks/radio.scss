@@ -22,14 +22,19 @@
 
   @include above($tablet-width) {
     @include font-size (20px, 30px, 400);
+    padding-left: 63px;
   }
 }
 
 .radio__item {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 
   &:last-child {
-    margin-bottom: 0;
+    margin-bottom: -6px;
+  }
+
+  @include above($tablet-width) {
+    margin-bottom: 26px;
   }
 }
 
@@ -42,6 +47,11 @@
   height: 30px;
   border: 1px solid $special-grey;
   border-radius: 50%;
+
+  @include above($tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 
@@ -54,6 +64,13 @@
   height: 13px;
   background-color: $basic-green;
   border-radius: 50%;
+
+  @include above($tablet-width) {
+    top: 10px;
+    left: 14px;
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .radio__input:hover + .radio__label::before,

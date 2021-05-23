@@ -4,7 +4,7 @@
   }
 
   @include above($desktop-width) {
-    margin-bottom: 75px;
+    margin-bottom: 70px;
   }
 }
 
@@ -45,8 +45,9 @@
     bottom: 0;
   }
 
-  @include above($tablet-width) {
+  @include above($desktop-width) {
     padding: 0;
+    margin-bottom: 89px;
 
     &::before,
     &::after {

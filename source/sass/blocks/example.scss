@@ -3,22 +3,24 @@
   padding: 27px 0 25px;
 
   @include above($tablet-width) {
+    padding-top: 45px;
     background-color: $basic-white;
-    background-image: linear-gradient(to bottom, $basic-white 57%, $special-grey-bg 57%, $special-grey-bg 100%);
+    background-image: linear-gradient(to bottom, $basic-white 61%, $special-grey-bg 61%, $special-grey-bg 100%);
   }
 
   @include above($desktop-width) {
-    background-image: linear-gradient(to bottom, $basic-white 20%, $special-grey-bg 20%, $special-grey-bg 100%);
+    background-image: linear-gradient(to bottom, $basic-white 23%, $special-grey-bg 23%, $special-grey-bg 100%);
     padding: 0;
   }
 }
 
 .example-wrapper {
   display: grid;
-  gap: 20px;
+  gap: 40px;
 
   @include above($desktop-width) {
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
 }
 
@@ -46,12 +48,13 @@
 
   @include above($tablet-width) {
     @include font-size (16px, 24px, 400);
-    margin-bottom: 54px;
+    margin-bottom: 37px;
+    margin-right: 2px;
   }
 
   @include above($desktop-width) {
     width: 436px;
-    margin-bottom: 63px;
+    margin-bottom: 50px;
   }
 }
 

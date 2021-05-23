@@ -2,7 +2,7 @@
   @include above($tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 34px 22px;
   }
 
   @include above($desktop-width) {
@@ -26,6 +26,7 @@
 
   @include above($tablet-width) {
     @include font-size (20px, 30px, 400);
+    padding-left: 14px;
   }
 }
 
@@ -37,6 +38,11 @@
   width: 30px;
   height: 30px;
   border: 1px solid $special-grey;
+
+  @include above($tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .checkbox__input:checked + .checkbox__label::after {
@@ -62,7 +68,7 @@
 
 
 .checkbox__item {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   padding-left: 45px;
 
   &:last-child {

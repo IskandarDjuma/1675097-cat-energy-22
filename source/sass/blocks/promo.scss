@@ -19,13 +19,12 @@
 
   @include above ($desktop-width) {
     padding: 0 0 267px;
-    margin-bottom: 82px;
   }
 }
 
 .promo__wrapper {
   @include above ($tablet-width) {
-    padding-left: 117px;
+    padding-left: 108px;
   }
 }
 
@@ -75,9 +74,9 @@
   }
 
   @include above ($desktop-width) {
-    left: 50%;
+    left: 57%;
     bottom: auto;
-    top: -50px;
+    top: -78px;
     width: 552px;
     height: 499px;
     transform: translateX(-50%);

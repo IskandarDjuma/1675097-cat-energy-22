@@ -1,9 +1,10 @@
 .program-selection {
-  padding-top: 27px;
-  padding-bottom: 32px;
+  padding-top: 17px;
+  padding-bottom: 18px;
 
   @include above($tablet-width) {
     padding-top: 0;
+    padding-bottom: 70px;
   }
 
   @include above($desktop-width) {
@@ -17,7 +18,7 @@
   }
 
   @include above($desktop-width) {
-    padding-left: 0;
+    padding-left: 28px;
   }
 }
 
@@ -41,6 +42,7 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 39px;
+  width: 90%;
 
   @include above($tablet-width) {
     @include font-size (20px, 30px, 400);

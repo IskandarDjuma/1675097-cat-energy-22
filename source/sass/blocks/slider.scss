@@ -7,7 +7,14 @@
   width: 228px;
 
   @include above($tablet-width) {
-    width: 590px;
+    margin-top: 15px;
+    margin-bottom: 47px;
+    width: 568px;
+  }
+
+  @include above($desktop-width) {
+    margin-top: -100px;
+    margin-bottom: 67px;
   }
 }
 
@@ -111,6 +118,8 @@
 }
 
 .slider__image-before {
+  margin-bottom: 40px;
+
   @include above($tablet-width) {
     position: absolute;
     display: block;
@@ -119,6 +128,7 @@
     bottom: 0;
     z-index: 2;
     overflow: hidden;
+    margin-bottom: 0;
   }
 
   @include above($tablet-width) {
