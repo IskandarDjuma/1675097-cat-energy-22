@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
@@ -7,8 +8,8 @@
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="apple.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
-  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   <title>Каталог продукции</title>
 </head>
 <body class="page__body">
@@ -56,7 +57,7 @@
               Cat Energy PRO 500&nbsp;г
             </h3>
           </a>
-          <div class="card-content__wrap">
+          <div class="card-item__wrap">
             <dl class="card-content">
               <div class="card-content__stats">
                 <dt class="card-content__term">Масса</dt>
@@ -72,7 +73,7 @@
               </div>
             </dl>
           </div>
-          <div class="card-content__img">
+          <div class="card-item__img">
             <a href="#">
               <picture>
                 <source type ="image/webp" media="(min-width: 1300px)" srcset="../img/product-img/chicken-small-desktop@1x.webp, ../img/product-img/chicken-small-desktop@2x.webp 2x">
@@ -81,11 +82,11 @@
 
                 <source media="(min-width: 1300px)" srcset="../img/product-img/chicken-small-desktop@1x.png, ../img/product-img/chicken-small-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="../img/product-img/chicken-small-tablet@1x.png, ../img/product-img/chicken-small-tablet@2x.png 2x">
-                <img class="card-content__image" src="../img/product-img/chicken-small-mobile@1x.png" srcset="../img/product-img/chicken-small-mobile@2x.png 2x" width="140" height="112" alt="Маленькая упаковка оранжевого цвета">
+                <img src="../img/product-img/chicken-small-mobile@1x.png" srcset="../img/product-img/chicken-small-mobile@2x.png 2x" width="140" height="112" alt="Маленькая упаковка оранжевого цвета">
               </picture>
             </a>
           </div>
-          <a class="button button--primary card-content__link" href="#">Заказать</a>
+          <a class="button button--primary card-item__btn" href="#">Заказать</a>
         </li>
         <li class="card-item">
           <a class="card-item__link" href="#">
@@ -93,7 +94,7 @@
               Cat Energy PRO 1000&nbsp;г
             </h3>
           </a>
-          <div class="card-content__wrap">
+          <div class="card-item__wrap">
             <dl class="card-content">
               <div class="card-content__stats">
                 <dt class="card-content__term">Масса</dt>
@@ -109,7 +110,7 @@
               </div>
             </dl>
           </div>
-          <div class="card-content__img">
+          <div class="card-item__img">
             <picture>
               <source type ="image/webp" media="(min-width: 1300px)" srcset="../img/product-img/chicken-big-desktop@1x.webp, ../img/product-img/chicken-big-desktop@2x.webp 2x">
               <source type ="image/webp" media="(min-width: 768px)" srcset="../img/product-img/chicken-big-tablet@1x.webp 1x, ../img/product-img/chicken-big-tablet@2x.webp 2x">
@@ -117,10 +118,10 @@
 
               <source media="(min-width: 1300px)" srcset="../img/product-img/chicken-big-desktop@1x.png, ../img/product-img/chicken-big-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="../img/product-img/chicken-big-tablet@1x.png, ../img/product-img/chicken-big-tablet@2x.png 2x">
-              <img class="card-content__image" src="../img/product-img/chicken-big-mobile@1x.png" srcset="../img/product-img/chicken-big-mobile@2x.png 2x" width="140" height="112" alt="Большая упаковка оранжевого цвета">
+              <img src="../img/product-img/chicken-big-mobile@1x.png" srcset="../img/product-img/chicken-big-mobile@2x.png 2x" width="140" height="112" alt="Большая упаковка оранжевого цвета">
             </picture>
           </div>
-          <a class="button button--primary card-content__link" href="#">Заказать</a>
+          <a class="button button--primary card-item__btn" href="#">Заказать</a>
         </li>
         <li class="card-item">
           <a class="card-item__link" href="#">
@@ -128,7 +129,7 @@
               Cat Energy PRO 500&nbsp;г
             </h3>
           </a>
-          <div class="card-content__wrap">
+          <div class="card-item__wrap">
             <dl class="card-content">
               <div class="card-content__stats">
                 <dt class="card-content__term">Масса</dt>
@@ -144,7 +145,7 @@
               </div>
             </dl>
           </div>
-          <div class="card-content__img">
+          <div class="card-item__img">
             <picture>
               <source type ="image/webp" media="(min-width: 1300px)" srcset="../img/product-img/fish-small-desktop@1x.webp, ../img/product-img/fish-small-desktop@2x.webp 2x">
               <source type ="image/webp" media="(min-width: 768px)" srcset="../img/product-img/fish-small-tablet@1x.webp 1x, ../img/product-img/fish-small-tablet@2x.webp 2x">
@@ -152,10 +153,10 @@
 
               <source media="(min-width: 1300px)" srcset="../img/product-img/fish-small-desktop@1x.png, ../img/product-img/fish-small-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="../img/product-img/fish-small-tablet@1x.png, ../img/product-img/fish-small-tablet@2x.png 2x">
-              <img class="card-content__image" src="../img/product-img/fish-small-mobile@1x.png" srcset="../img/product-img/fish-small-mobile@2x.png 2x" width="140" height="112" alt="Маленькая упаковка зеленного цвета">
+              <img src="../img/product-img/fish-small-mobile@1x.png" srcset="../img/product-img/fish-small-mobile@2x.png 2x" width="140" height="112" alt="Маленькая упаковка зеленного цвета">
             </picture>
           </div>
-          <a class="button button--primary card-content__link" href="#">Заказать</a>
+          <a class="button button--primary card-item__btn" href="#">Заказать</a>
         </li>
         <li class="card-item">
           <a class="card-item__link" href="#">
@@ -163,7 +164,7 @@
               Cat Energy PRO 1000&nbsp;г
             </h3>
           </a>
-          <div class="card-content__wrap">
+          <div class="card-item__wrap">
             <dl class="card-content">
               <div class="card-content__stats">
                 <dt class="card-content__term">Масса</dt>
@@ -179,7 +180,7 @@
               </div>
             </dl>
           </div>
-          <div class="card-content__img">
+          <div class="card-item__img">
             <picture>
               <source type ="image/webp" media="(min-width: 1300px)" srcset="../img/product-img/fish-big-desktop@1x.webp, ../img/product-img/fish-big-desktop@2x.webp 2x">
               <source type ="image/webp" media="(min-width: 768px)" srcset="../img/product-img/fish-big-tablet@1x.webp 1x, ../img/product-img/fish-big-tablet@2x.webp 2x">
@@ -187,10 +188,10 @@
 
               <source media="(min-width: 1300px)" srcset="../img/product-img/fish-big-desktop@1x.png, ../img/product-img/fish-big-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="../img/product-img/fish-big-tablet@1x.png, ../img/product-img/fish-big-tablet@2x.png 2x">
-              <img class="card-content__image" src="../img/product-img/fish-big-mobile@1x.png" srcset="../img/product-img/fish-big-mobile@2x.png 2x" width="140" height="112" alt="Большая упаковка оранжевого цвета">
+              <img src="../img/product-img/fish-big-mobile@1x.png" srcset="../img/product-img/fish-big-mobile@2x.png 2x" width="140" height="112" alt="Большая упаковка оранжевого цвета">
             </picture>
           </div>
-          <a class="button button--primary card-content__link" href="#">Заказать</a>
+          <a class="button button--primary card-item__btn" href="#">Заказать</a>
         </li>
         <li class="card-item">
           <a class="card-item__link" href="#">
@@ -198,7 +199,7 @@
               Cat Energy slim 500&nbsp;г
             </h3>
           </a>
-          <div class="card-content__wrap">
+          <div class="card-item__wrap">
             <dl class="card-content">
               <div class="card-content__stats">
                 <dt class="card-content__term">Масса</dt>
@@ -214,7 +215,7 @@
               </div>
             </dl>
           </div>
-          <div class="card-content__img">
+          <div class="card-item__img">
             <picture>
               <source type ="image/webp" media="(min-width: 1300px)" srcset="../img/product-img/buckwheat-small-desktop@1x.webp, ../img/product-img/buckwheat-small-desktop@2x.webp 2x">
               <source type ="image/webp" media="(min-width: 768px)" srcset="../img/product-img/buckwheat-small-tablet@1x.webp 1x, ../img/product-img/buckwheat-small-tablet@2x.webp 2x">
@@ -222,10 +223,10 @@
 
               <source media="(min-width: 1300px)" srcset="../img/product-img/buckwheat-small-desktop@1x.png, ../img/product-img/buckwheat-small-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="../img/product-img/buckwheat-small-tablet@1x.png, ../img/product-img/buckwheat-small-tablet@2x.png 2x">
-              <img class="card-content__image" src="../img/product-img/buckwheat-small-mobile@1x.png" srcset="../img/product-img/buckwheat-small-mobile@2x.png 2x" width="140" height="112" alt="Маленькая упаковка голубого цвета">
+              <img src="../img/product-img/buckwheat-small-mobile@1x.png" srcset="../img/product-img/buckwheat-small-mobile@2x.png 2x" width="140" height="112" alt="Маленькая упаковка голубого цвета">
             </picture>
           </div>
-          <a class="button button--primary card-content__link" href="#">Заказать</a>
+          <a class="button button--primary card-item__btn" href="#">Заказать</a>
         </li>
         <li class="card-item">
           <a class="card-item__link" href="#">
@@ -233,7 +234,7 @@
               Cat Energy slim 1000&nbsp;г
             </h3>
           </a>
-          <div class="card-content__wrap">
+          <div class="card-item__wrap">
             <dl class="card-content">
               <div class="card-content__stats">
                 <dt class="card-content__term">Масса</dt>
@@ -249,7 +250,7 @@
               </div>
             </dl>
           </div>
-          <div class="card-content__img">
+          <div class="card-item__img">
             <picture>
               <source type ="image/webp" media="(min-width: 1300px)" srcset="../img/product-img/buckwheat-big-desktop@1x.webp, ../img/product-img/buckwheat-big-desktop@2x.webp 2x">
               <source type ="image/webp" media="(min-width: 768px)" srcset="../img/product-img/buckwheat-big-tablet@1x.webp 1x, ../img/product-img/buckwheat-big-tablet@2x.webp 2x">
@@ -257,10 +258,10 @@
 
               <source media="(min-width: 768px)" srcset="../img/product-img/buckwheat-big-desktop@1x.png, ../img/product-img/buckwheat-big-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="../img/product-img/buckwheat-big-tablet@1x.png, ../img/product-img/buckwheat-big-tablet@2x.png 2x">
-              <img class="card-content__image" src="../img/product-img/buckwheat-big-mobile@1x.png" srcset="../img/product-img/buckwheat-big-mobile@2x.png 2x" width="140" height="112" alt="Большая упаковка голубого цвета">
+              <img src="../img/product-img/buckwheat-big-mobile@1x.png" srcset="../img/product-img/buckwheat-big-mobile@2x.png 2x" width="140" height="112" alt="Большая упаковка голубого цвета">
             </picture>
           </div>
-          <a class="button button--primary card-content__link" href="#">Заказать</a>
+          <a class="button button--primary card-item__btn" href="#">Заказать</a>
         </li>
         <li class="card-item">
           <a class="card-item__link" href="#">
@@ -268,7 +269,7 @@
               Cat Energy slim 500&nbsp;г
             </h3>
           </a>
-          <div class="card-content__wrap">
+          <div class="card-item__wrap">
             <dl class="card-content">
               <div class="card-content__stats">
                 <dt class="card-content__term">Масса</dt>
@@ -284,7 +285,7 @@
               </div>
             </dl>
           </div>
-          <div class="card-content__img">
+          <div class="card-item__img">
             <picture>
               <source type ="image/webp" media="(min-width: 1300px)" srcset="../img/product-img/rice-small-desktop@1x.webp, ../img/product-img/rice-small-desktop@2x.webp 2x">
               <source type ="image/webp" media="(min-width: 768px)" srcset="../img/product-img/rice-small-tablet@1x.webp 1x, ../img/product-img/rice-small-tablet@2x.webp 2x">
@@ -292,10 +293,10 @@
 
               <source media="(min-width: 1300px)" srcset="../img/product-img/rice-small-desktop@1x.png, ../img/product-img/rice-small-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="../img/product-img/rice-small-tablet@1x.png, ../img/product-img/rice-small-tablet@2x.png 2x">
-              <img class="card-content__image" src="../img/product-img/rice-small-mobile@1x.png" srcset="../img/product-img/rice-small-mobile@2x.png 2x" width="140" height="112" alt="Маленькая упаковка фиолетового цвета">
+              <img src="../img/product-img/rice-small-mobile@1x.png" srcset="../img/product-img/rice-small-mobile@2x.png 2x" width="140" height="112" alt="Маленькая упаковка фиолетового цвета">
             </picture>
           </div>
-          <a class="button button--primary card-content__link" href="#">Заказать</a>
+          <a class="button button--primary card-item__btn" href="#">Заказать</a>
         </li>
         <li class="card-item show-more">
           <div class="show-more__wrap">
@@ -352,8 +353,9 @@
           </p>
         </article>
       </div>
+    </div>
     </section>
-    <section class="contacts contacts__inner">
+    <section class="contacts contacts--inner">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__wrapper container">
         <h3 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h3>
@@ -379,7 +381,7 @@
           <li class="social-list__item">
             <a class="social-list__link" href="#">
               <span class="visually-hidden">Инстаграм</span>
-              <svg class="social-list__icon social-list--instagram" width="20" height="20">
+              <svg class="social-list__icon social-list__icon--instagram" width="20" height="20">
                 <use xlink:href="img/sprite.svg#icon_instagram"></use>
               </svg>
             </a>

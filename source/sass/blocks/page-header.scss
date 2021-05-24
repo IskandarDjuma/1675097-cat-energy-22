@@ -1,6 +1,5 @@
 .page-header {
   padding-top: 24px;
-  padding-bottom: 10px;
   min-height: 66px;
 
   @include above ($tablet-width) {
@@ -12,7 +11,12 @@
     padding-top: 54px;
     padding-bottom: 107px;
 
+    &--index {
+      padding-bottom: 84px;
+    }
+
     &--inner {
+      padding-top: 60px;
       padding-bottom: 73px;
     }
   }

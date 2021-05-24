@@ -64,37 +64,6 @@
   }
 
   @include above($desktop-width) {
-    background-color: $special-grey-bg;
-  }
-}
-
-.stats__expenses {
-  @include font-size (14px, 20px, 400);
-  font-family: $primary-text;
-  text-transform: uppercase;
-  color: $basic-black;
-  text-align: center;
-
-  @include above($tablet-width) {
-    @include font-size (20px, 20px, 400);
-    margin-left: auto;
-    text-align: end;
-    margin-top: 0;
-
-    &--price {
-      display: block;
-      padding-top: 10px;
-    }
-  }
-
-  @include above($desktop-width) {
-    @include font-size (20px, 20px, 400);
-    margin-left: 0;
-    margin-right: auto;
-
-    &--price {
-      display: initial;
-      margin-left: 58px;
-    }
+    background-color: $basic-grey;
   }
 }

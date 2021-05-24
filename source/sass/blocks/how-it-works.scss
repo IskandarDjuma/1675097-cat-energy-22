@@ -39,11 +39,11 @@
 
   @include above($tablet-width) {
     @include font-size (60px, 60px, 400);
-    padding-bottom: 32px;
+    padding-bottom: 40px;
   }
 
-  @include above($tablet-width) {
-    padding-bottom: 40px;
+  @include above($desktop-width) {
+    padding-bottom: 46px;
   }
 }
 

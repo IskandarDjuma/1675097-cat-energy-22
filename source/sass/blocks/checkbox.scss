@@ -1,4 +1,6 @@
 .checkbox {
+  @include list-reset;
+
   @include above($tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -9,10 +11,6 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 80px;
   }
-}
-
-.checkbox__list {
-  @include list-reset;
 }
 
 .checkbox__label {

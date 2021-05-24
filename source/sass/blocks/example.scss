@@ -18,7 +18,7 @@
   }
 }
 
-.example-wrapper {
+.example__wrapper {
   display: grid;
   gap: 40px;
 
@@ -41,7 +41,7 @@
   }
 
   @include above($desktop-width) {
-    margin-bottom: 143px;
+    margin-bottom: 145px;
   }
 }
 
@@ -80,5 +80,36 @@
 
   @include above($desktop-width) {
     padding-top: 496px;
+  }
+}
+
+.example__expenses {
+  @include font-size (14px, 20px, 400);
+  font-family: $primary-text;
+  text-transform: uppercase;
+  color: $basic-black;
+  text-align: center;
+
+  @include above($tablet-width) {
+    @include font-size (20px, 20px, 400);
+    margin-left: auto;
+    text-align: end;
+    margin-top: 0;
+
+    &--price {
+      display: block;
+      padding-top: 10px;
+    }
+  }
+
+  @include above($desktop-width) {
+    @include font-size (20px, 20px, 400);
+    margin-left: 0;
+    margin-right: auto;
+
+    span {
+      display: initial;
+      margin-left: 58px;
+    }
   }
 }

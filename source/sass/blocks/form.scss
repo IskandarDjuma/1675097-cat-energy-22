@@ -226,6 +226,26 @@
   }
 }
 
+.form__field-icon {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  transform: translate(100%, -50%);
+  fill: none;
+
+  @include above($tablet-width) {
+    &--mail {
+      width: 18px;
+      height: 13px;
+    }
+
+    &--phone {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
 .form__submit {
   @include above($tablet-width) {
     display: flex;

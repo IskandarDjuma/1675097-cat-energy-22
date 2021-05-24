@@ -9,8 +9,8 @@
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="apple.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
-  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   <title>Форма</title>
 </head>
 
@@ -100,14 +100,14 @@
             <li class="form__field form__field--icon">
               <label class="form__label" for="block-mail">E-mail:*</label>
               <input class="form__input text-field" type="email" id="block-mail" name="email" placeholder="kuklachev@gmail.com">
-              <svg class="text-field__icon text-field__icon--mail" width="17" height="13">
+              <svg class="form__field-icon form__field-icon--mail" width="17" height="13">
                 <use xlink:href="img/sprite.svg#mail-icon"></use>
               </svg>
             </li>
             <li class="form__field form__field--icon">
               <label class="form__label" for="phone">Телефон:*</label>
               <input class="form__input text-field" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90">
-              <svg class="text-field__icon text-field__icon--phone" width="20" height="20">
+              <svg class="form__field-icon form__field-icon--phone" width="20" height="20">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg>
             </li>
@@ -121,7 +121,7 @@
         </fieldset>
         <fieldset class="form__group form__group--extra">
           <legend class="form__legend decor-title">Дополнительно</legend>
-          <ul class="checkbox checkbox__list">
+          <ul class="checkbox">
             <li class="checkbox__item">
               <input class="visually-hidden checkbox__input" type="checkbox" id="sweetener" name="sweetener" checked>
               <label class="checkbox__label" for="sweetener">Сахарозаменитель</label>
@@ -147,7 +147,7 @@
       </form>
     </div>
     </section>
-    <section class="contacts contacts__inner">
+    <section class="contacts contacts--inner">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__wrapper container">
         <h3 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h3>

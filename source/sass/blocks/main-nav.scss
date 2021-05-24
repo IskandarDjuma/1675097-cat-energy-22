@@ -11,11 +11,13 @@
     &--opened {
       display: block;
     }
-  }
 
-  &--nojs {
-    .site__list {
+    &--nojs {
       display: block;
+
+      .main-nav__list {
+        display: block;
+      }
     }
   }
 

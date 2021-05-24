@@ -9,8 +9,8 @@
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="apple.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
-  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
@@ -25,7 +25,7 @@
             <img class="logo__image" src="img/logo/main-mobile-logo.svg" width="190" height="37" alt="Логотип компании">
           </picture>
         </a>
-        <button class="page-header__toggle page-header__toggle--open" type="button">
+        <button class="page-header__toggle page-header__toggle--open page-header__toggle--nojs" type="button">
           <span class="visually-hidden">Открыть/закрыть меню</span>
         </button>
       </div>
@@ -55,13 +55,16 @@
           Занялся собой? Займись котом!
         </p>
         <picture>
-          <source type ="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp, img/index-can-desktop@2x.webp 2x">
-          <source type ="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
-          <source type ="image/webp" srcset="img/index-can-mobile@1x.webp, img/index-can-mobile@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1300px)"
+            srcset="img/index-can-desktop@1x.webp, img/index-can-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/index-can-mobile@1x.webp, img/index-can-mobile@2x.webp 2x">
 
           <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
-          <img class="promo__img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Корм для кошек Cat Energy Pro">
+          <img class="promo__img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"
+            alt="Корм для кошек Cat Energy Pro">
         </picture>
         <a class="promo__button button button--primary" href="form.html">Подобрать программу</a>
       </div>
@@ -116,8 +119,8 @@
       </div>
     </section>
     <section class="example">
-      <div class="example-wrapper container">
-        <div class="exapmle__content">
+      <div class="example__wrapper container">
+        <div class="example__content">
           <h2 class="example__title">Живой пример</h2>
           <p class="example__description">
             Борис сбросил 5&nbsp;кг за&nbsp;2&nbsp;месяца, просто заменив свой обычный корм на&nbsp;Cat Energy Slim.
@@ -143,8 +146,8 @@
                 </dd>
               </div>
             </dl>
-            <p class="stats-item stats__expenses">
-              Затраты на питание: <span class="stats__expenses--price">15&nbsp;000&nbsp;руб.</span>
+            <p class="example__expenses">
+              Затраты на питание: <span>15&nbsp;000&nbsp;руб.</span>
             </p>
           </div>
         </div>
@@ -152,39 +155,46 @@
           <div class="slider__images">
             <div class="slider__image-before">
               <picture>
-                <source type ="image/webp" media="(min-width: 768px)" srcset="img/cat-fat-tablet@1x.webp 1x, img/cat-fat-tablet@2x.webp 2x">
-                <source type ="image/webp" srcset="img/cat-fat-mobile@1x.webp, img/cat-fat-mobile@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/cat-fat-tablet@1x.webp 1x, img/cat-fat-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/cat-fat-mobile@1x.webp, img/cat-fat-mobile@2x.webp 2x">
 
                 <source media="(min-width: 768px)" srcset="img/cat-fat-tablet@1x.png 1x, img/cat-fat-tablet@2x.png 2x">
-                <img class="slider__img" src="img/cat-fat-mobile@1x.png 1x" srcset="img/cat-fat-mobile@2x.png 2x" width="311" height="232" alt="Фотография толстого кота до приема программы питания">
+                <img class="slider__img" src="img/cat-fat-mobile@1x.png" srcset="img/cat-fat-mobile@2x.png 2x"
+                  width="311" height="232" alt="Фотография толстого кота до приема программы питания">
               </picture>
             </div>
             <div class="slider__image-after">
               <picture>
-                <source type ="image/webp" media="(min-width: 768px)" srcset="img/cat-skinny-tablet@1x.webp 1x, img/cat-skinny-tablet@2x.webp 2x">
-                <source type ="image/webp" srcset="img/cat-skinny-mobile@1x.webp, img/cat-skinny-mobile@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/cat-skinny-tablet@1x.webp 1x, img/cat-skinny-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/cat-skinny-mobile@1x.webp, img/cat-skinny-mobile@2x.webp 2x">
 
-                <source media="(min-width: 768px)" srcset="img/cat-skinny-tablet@1x.png 1x, img/cat-skinny-tablet@2x.png 2x ">
-                <img class="slider__img" src="img/cat-skinny-mobile@1x.png 1x" srcset="img/cat-skinny-mobile@2x.png" width="311" height="232" alt="Фотография похудевшего кота после приема программы питания">
+                <source media="(min-width: 768px)"
+                  srcset="img/cat-skinny-tablet@1x.png 1x, img/cat-skinny-tablet@2x.png 2x ">
+                <img class="slider__img" src="img/cat-skinny-mobile@1x.png" srcset="img/cat-skinny-mobile@2x.png"
+                  width="311" height="232" alt="Фотография похудевшего кота после приема программы питания">
               </picture>
             </div>
-      </div>
-      <div class="slider__buttons">
-        <button class="slider__button button" type="button">Было</button>
-        <div class="slider__range">
-          <div class="slider__scale">
-            <div class="slider__thumb" tabindex="0"></div>
+          </div>
+          <div class="slider__buttons">
+            <button class="slider__button button" type="button">Было</button>
+            <div class="slider__range">
+              <div class="slider__scale">
+                <div class="slider__thumb" tabindex="0"></div>
+              </div>
+            </div>
+            <button class="slider__button button" type="button">Стало</button>
           </div>
         </div>
-        <button class="slider__button button" type="button">Стало</button>
-  </div>
-    </div>
+      </div>
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__wrapper container">
         <h3 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h3>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></address>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span
+            class="contacts__city">Санкт-Петербург</span></address>
       </div>
       <div class="contacts__map-wrapper"></div>
     </section>
@@ -224,7 +234,8 @@
             <p class="copyright__text">
               HTML Academy
             </p>
-            <svg class="copyright__link-svg" width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+            <svg class="copyright__link-svg" width="27" height="34" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 60 60">
               <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
