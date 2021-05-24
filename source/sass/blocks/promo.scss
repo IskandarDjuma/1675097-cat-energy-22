@@ -24,7 +24,7 @@
 
 .promo__wrapper {
   @include above ($tablet-width) {
-    padding-left: 108px;
+    padding-left: 117px;
   }
 }
 
@@ -41,7 +41,8 @@
     color: $basic-black;
     max-width: 501px;
     text-align: left;
-    margin-bottom: 41px;
+    margin-bottom: 40px;
+    padding-top: 21px;
   }
 }
 
@@ -57,7 +58,7 @@
   @include above ($tablet-width) {
     @include font-size (20px, 20px, 400);
     color: $basic-black;
-    margin-bottom: 49px;
+    margin-bottom: 50px;
     text-align: left;
   }
 }
@@ -74,7 +75,7 @@
   }
 
   @include above ($desktop-width) {
-    left: 57%;
+    left: 58%;
     bottom: auto;
     top: -78px;
     width: 552px;

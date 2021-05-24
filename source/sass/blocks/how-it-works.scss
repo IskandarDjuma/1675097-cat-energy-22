@@ -1,6 +1,6 @@
 .how-it-works {
   position: relative;
-  padding: 2px 0 42px;
+  padding: 2px 0 30px;
 
   &::before {
     @include above($tablet-width) {
@@ -14,10 +14,10 @@
       margin-left: -50vw;
       margin-right: -50vw;
       background-color: $basic-light-grey;
-    }
 
-    @include above($desktop-width) {
-      display: none;
+      @include above($desktop-width) {
+        display: none;
+      }
     }
   }
 
@@ -120,7 +120,7 @@
 
     &::before {
       margin-right: auto;
-      margin-top: 13%;
+      margin-top: 11%;
       width: 80px;
       height: 80px;
       background-size: 30px 50px;
@@ -149,7 +149,7 @@
 
   @include above($tablet-width) {
     @include font-size (16px, 24px, 400);
-    padding-top: 30px;
+    padding-top: 32px;
     padding-right: 65px;
     padding-bottom: 57px;
   }

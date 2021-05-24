@@ -11,7 +11,7 @@
   @include above($desktop-width) {
     margin-bottom: 60px;
     margin-right: auto;
-    width: 65%;
+    width: 61%;
   }
 }
 
@@ -44,6 +44,7 @@
 
   @include above($tablet-width) {
     @include font-size (30px, 37px, 400);
+    padding-bottom: 12px;
   }
 }
 
@@ -93,7 +94,7 @@
 
     &--price {
       display: initial;
-      margin-left: 53px;
+      margin-left: 58px;
     }
   }
 }

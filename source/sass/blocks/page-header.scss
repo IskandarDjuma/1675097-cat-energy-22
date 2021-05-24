@@ -4,16 +4,16 @@
   min-height: 66px;
 
   @include above ($tablet-width) {
-    padding-top: 42px;
-    padding-bottom: 55px;
+    padding-bottom: 31px;
   }
 
   @include above ($desktop-width) {
     position: relative;
-    padding-bottom: 105px;
+    padding-top: 54px;
+    padding-bottom: 107px;
 
     &--inner {
-      padding-bottom: 70px;
+      padding-bottom: 73px;
     }
   }
 
@@ -22,7 +22,7 @@
       content: "";
       position: absolute;
       width: calc(100% / 2);
-      height: 683px;
+      height: 694px;
       top: 0;
       right: 0;
       background-color: $basic-green200;

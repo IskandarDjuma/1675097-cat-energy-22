@@ -12,7 +12,7 @@
   @include above($desktop-width) {
     display: grid;
     grid-template-columns: 1fr 245px;
-    column-gap: 40px;
+    column-gap: 80px;
     margin-bottom: 85px;
   }
 }
@@ -44,7 +44,7 @@
   margin-bottom: 40px;
 
   @include above($tablet-width) {
-    margin-bottom: 70px;
+    margin-bottom: 80px;
   }
 
   @include above($desktop-width) {
@@ -57,7 +57,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
   padding-bottom: 20px;
   border-bottom: 1px solid $special-grey;
 
@@ -68,8 +68,8 @@
   @include above($tablet-width) {
     padding-top: 28px;
     padding-left: 38px;
-    padding-bottom: 26px;
-    padding-right: 40px;
+    padding-bottom: 21px;
+    padding-right: 38px;
     border: 1px solid $special-grey;
     margin-bottom: 0;
 
@@ -79,9 +79,7 @@
   }
 
   @include above($desktop-width) {
-    padding-bottom: 9px;
-    padding-left: 0;
-    margin-bottom: -2px;
+    padding: 15px 0;
     border: none;
     border-bottom: 1px solid $special-grey;
 
@@ -121,7 +119,7 @@
 
   @include above($tablet-width) {
     @include font-size (16px, 20px, 400);
-    margin-right: 40px;
+    margin-right: 50px;
     margin-bottom: 0;
 
     &:last-of-type {
@@ -142,11 +140,12 @@
 }
 
 .additionally__button {
+  @include font-size (16px, 20px, 400);
   width: 100%;
 
   @include above($tablet-width) {
     margin-top: 27px;
-    padding: 9px 35px;
+    padding: 10px 35px;
   }
 
   @include above($desktop-width) {

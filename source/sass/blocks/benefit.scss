@@ -78,7 +78,7 @@
 
   @include above($desktop-width) {
     margin-bottom: 73px;
-    padding-left: 161px;
+    padding-left: 165px;
   }
 }
 
@@ -94,7 +94,7 @@
     padding-bottom: 0;
     border: none;
     margin-bottom: 52px;
-    max-width: 377px;
+    max-width: 340px;
   }
 
   @include above($desktop-width) {

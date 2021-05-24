@@ -1,14 +1,14 @@
 .form {
   @include above($desktop-width) {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, auto);
     grid-template-areas:
       "name program"
       "contacts contacts"
       "comments comments"
       "extra extra";
-    gap: 72px 60px;
+    gap: 0 80px;
   }
 }
 
@@ -31,7 +31,7 @@
 
   @include above($desktop-width) {
     @include font-size (20px, 30px, 400);
-    margin-right: 27px;
+    margin-right: 20px;
   }
 }
 
@@ -83,7 +83,7 @@
     }
 
     @include above($tablet-width) {
-      margin-bottom: 74px;
+      margin-bottom: 78px;
 
       &::before,
       &::after {
@@ -93,7 +93,7 @@
 
     @include above($desktop-width) {
       grid-area: program;
-      margin-bottom: 0;
+      margin-bottom: 75px;
     }
   }
 
@@ -104,7 +104,7 @@
 
     @include above($desktop-width) {
       grid-area: contacts;
-      margin-bottom: 0;
+      margin-bottom: 65px;
     }
   }
 
@@ -112,12 +112,12 @@
     margin-bottom: 17px;
 
     @include above($tablet-width) {
-      margin-bottom: 65px;
+      margin-bottom: 63px;
     }
 
     @include above($desktop-width) {
       grid-area: comments;
-      margin-bottom: 0;
+      margin-bottom: 65px;
     }
   }
 
@@ -125,7 +125,7 @@
     margin-bottom: 20px;
 
     @include above($tablet-width) {
-      margin-bottom: 63px;
+      margin-bottom: 58px;
 
       .form__legend {
         margin-bottom: 61px;
@@ -134,10 +134,10 @@
 
     @include above($desktop-width) {
       grid-area: extra;
-      margin-bottom: 0;
+      margin-bottom: 65px;
 
       .form__legend {
-        margin-bottom: 50px;
+        margin-bottom: 62px;
       }
     }
   }
@@ -224,10 +224,6 @@
     @include font-size (16px, 16px, 400);
     margin-top: 13px;
   }
-
-  @include above($desktop-width) {
-    margin-top: -14px;
-  }
 }
 
 .form__submit {
@@ -250,7 +246,7 @@
   }
 
   @include above($desktop-width) {
-    margin-right: 74px;
+    margin-right: 75px;
     width: 47%;
   }
 }

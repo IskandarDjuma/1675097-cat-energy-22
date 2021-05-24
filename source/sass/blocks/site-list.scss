@@ -1,4 +1,6 @@
 .site-list {
+  position: relative;
+
   @include above($tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -8,24 +10,8 @@
     padding-top: 12px;
   }
 
-  @include above($desktop-width) {
-    &--white {
-      .site-list__item--active {
-        border-bottom: 2px solid $basic-white;
-      }
-
-      .site-list__link {
-        color: $basic-white;
-
-        &:hover {
-          color: rgba $basic-white, 0.8;
-        }
-
-        &:focus {
-          color: rgba $basic-white, 0.5;
-        }
-      }
-    }
+  @include above($tablet-width) {
+    padding-top: 7px;
   }
 }
 
@@ -39,10 +25,45 @@
       margin-bottom: 0;
     }
 
-    &--active {
-      border-bottom: 2px solid $basic-green;
+    .site-list__link--active::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $basic-green;
+    }
+
+    @include above($desktop-width) {
+      &--white {
+        position: relative;
+
+        .site-list__link--active::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background-color: $basic-white;
+        }
+
+        .site-list__link {
+          color: $basic-white;
+
+          &:hover {
+            color: rgba $basic-white, 0.8;
+          }
+
+          &:focus {
+            color: rgba $basic-white, 0.5;
+          }
+        }
+      }
     }
   }
+
 
   &::before {
     content: "";
@@ -99,11 +120,11 @@
     @include font-size (18px, 24px, 400);
     border: none;
     padding: 0;
-    padding-bottom: 10px;
+    padding-bottom: 6px;
   }
 
   @include above($desktop-width) {
     @include font-size (20px, 30px, 400);
-    padding-bottom: 12px;
+    padding-bottom: 8px;
   }
 }

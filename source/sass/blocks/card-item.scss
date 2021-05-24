@@ -7,7 +7,6 @@
 
   @include above($tablet-width) {
     background-image: linear-gradient(to bottom, $basic-white 82px, $basic-grey 82px, $basic-grey);
-    min-height: 511px;
     padding: 0;
   }
 
@@ -29,12 +28,14 @@
   }
 
   @include above($desktop-width) {
+    background-image: linear-gradient(to bottom, $basic-white 82px, $basic-grey 82px, $basic-grey);
     padding-bottom: 20px;
   }
 }
 
 .card-item__link {
   color: $special-dark-grey2;
+  margin-bottom: 15px;
 
   &:hover {
     color: $special-grey3;
@@ -47,6 +48,11 @@
   @include above($tablet-width) {
     grid-column: 1/-1;
     text-align: -webkit-center;
+    margin-bottom: 17px;
+  }
+
+  @include above($desktop-width) {
+    margin-bottom: 24px;
   }
 }
 
@@ -55,7 +61,6 @@
   font-family: $primary-text;
   margin: 0;
   text-transform: uppercase;
-  margin-bottom: 14px;
   width: 60%;
 
   @include above($tablet-width) {
@@ -74,16 +79,17 @@
 
 .card-content__wrap {
   grid-column: 2/3;
-  margin-bottom: 23px;
+  margin-bottom: 24px;
 
   @include above($tablet-width) {
     grid-column: 1/-1;
-    margin-bottom: 0;
     padding: 0 35px;
+    margin-bottom: 35px;
   }
 
   @include above($desktop-width) {
     padding: 0 38px;
+    margin-bottom: 38px;
   }
 }
 
@@ -113,7 +119,6 @@
 
   @include above($desktop-width) {
     margin-bottom: 10px;
-    padding-bottom: 10px;
   }
 }
 
@@ -129,27 +134,30 @@
     grid-column: 1/-1;
     grid-row: 1/2;
     text-align: center;
-    margin-bottom: 34px;
+    margin-bottom: 70px;
     height: 172px;
     padding-left: 0;
   }
 
   @include above($desktop-width) {
-    margin-bottom: 45px;
+    margin-bottom: 75px;
   }
 }
 
 .card-content__link {
   @include font-size (16px, 16px, 400);
   grid-column: 1/-1;
+  margin-bottom: 20px;
 
   @include above($tablet-width) {
     padding: 10px 35px;
     margin: 0 auto;
+    margin-bottom: 40px;
   }
 
   @include above($desktop-width) {
     width: 170px;
+    margin-bottom: 20px;
   }
 }
 

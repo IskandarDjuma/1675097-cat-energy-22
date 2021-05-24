@@ -5,20 +5,22 @@
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
-  padding-top: 37px;
+  padding-top: 28px;
   padding-bottom: 25px;
 
   @include above($tablet-width) {
-    padding: 64px 72px 56px;
+    padding: 64px 80px 60px;
   }
 
   @include above($desktop-width) {
     position: absolute;
     top: 101px;
-    left: calc(50% - 600px);
-    width: 554px;
+    left: calc(50% - 611px);
+    width: 570px;
     background-color: $basic-white;
-    padding-top: 60px;
+    padding-top: 58px;
+    padding-left: 86px;
+    padding-right: 75px;
   }
 }
 
@@ -67,15 +69,6 @@
 
 .contacts__inner {
   background-color: $basic-grey;
-
-  .contacts__wrapper {
-    padding-top: 28px;
-
-    @include above($tablet-width) {
-      padding-top: 64px;
-      padding-left: 82px;
-    }
-  }
 }
 
 .contacts__map-wrapper {
