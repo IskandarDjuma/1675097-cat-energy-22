@@ -13,7 +13,7 @@
     display: grid;
     grid-template-columns: 1fr 245px;
     column-gap: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 85px;
   }
 }
 
@@ -25,26 +25,26 @@
   font-family: $primary-text;
   color: $basic-black;
   padding-right: 22px;
-  margin-top: 0;
   margin-bottom: 49px;
+  margin-top: 10px;
 
   @include above($tablet-width) {
     @include font-size (36px, 36px, 400);
     margin-bottom: 80px;
-    padding-left: 60px;
+    padding-left: 75px;
   }
 
   @include above($desktop-width) {
-    padding-left: inherit;
+    padding-left: 39px;
   }
 }
 
 .additionally__list {
   @include list-reset;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 
   @include above($tablet-width) {
-    margin-bottom: 70px;
+    margin-bottom: 80px;
   }
 
   @include above($desktop-width) {
@@ -57,7 +57,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
   padding-bottom: 20px;
   border-bottom: 1px solid $special-grey;
 
@@ -66,19 +66,25 @@
   }
 
   @include above($tablet-width) {
-    padding-bottom: 28px;
+    padding-top: 28px;
+    padding-left: 38px;
+    padding-bottom: 21px;
+    padding-right: 38px;
+    border: 1px solid $special-grey;
+    margin-bottom: 0;
 
     &:first-child {
       padding-top: 25px;
-      border-top: 1px solid $special-grey;
     }
   }
 
   @include above($desktop-width) {
-    padding-bottom: 17px;
-    margin-bottom: 15px;
+    padding: 15px 0;
+    border: none;
+    border-bottom: 1px solid $special-grey;
 
     &:first-child {
+      border-top: 1px solid $special-grey;
       padding-top: 15px;
     }
   }
@@ -113,7 +119,7 @@
 
   @include above($tablet-width) {
     @include font-size (16px, 20px, 400);
-    margin-right: 40px;
+    margin-right: 50px;
     margin-bottom: 0;
 
     &:last-of-type {
@@ -124,6 +130,7 @@
   @include above($desktop-width) {
     &--size {
       margin-left: auto;
+      margin-right: 5px;
       width: 244px;
       text-align: left;
       padding-right: 10px;
@@ -133,10 +140,12 @@
 }
 
 .additionally__button {
+  @include font-size (16px, 20px, 400);
   width: 100%;
 
   @include above($tablet-width) {
     margin-top: 27px;
+    padding: 10px 35px;
   }
 
   @include above($desktop-width) {

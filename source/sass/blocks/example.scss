@@ -3,22 +3,28 @@
   padding: 27px 0 25px;
 
   @include above($tablet-width) {
-    background-color: $basic-white;
-    background-image: linear-gradient(to bottom, $basic-white 57%, $special-grey-bg 57%, $special-grey-bg 100%);
+    padding-top: 45px;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to bottom, $basic-white 57%, $basic-grey 57%, $basic-grey 100%);
   }
 
   @include above($desktop-width) {
-    background-image: linear-gradient(to bottom, $basic-white 20%, $special-grey-bg 20%, $special-grey-bg 100%);
+    background-image:
+      linear-gradient(to bottom, $basic-white 134px, $transparent 134px),
+      linear-gradient(to right, $basic-grey calc(50% + 325px), $special-grey-bg calc(50% + 325px));
+    // background-image:
     padding: 0;
+    padding-bottom: 53px;
   }
 }
 
 .example-wrapper {
   display: grid;
-  gap: 20px;
+  gap: 40px;
 
   @include above($desktop-width) {
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
 }
 
@@ -35,7 +41,7 @@
   }
 
   @include above($desktop-width) {
-    margin-bottom: 146px;
+    margin-bottom: 143px;
   }
 }
 
@@ -46,12 +52,13 @@
 
   @include above($tablet-width) {
     @include font-size (16px, 24px, 400);
-    margin-bottom: 54px;
+    margin-bottom: 37px;
+    margin-right: 2px;
   }
 
   @include above($desktop-width) {
     width: 436px;
-    margin-bottom: 63px;
+    margin-bottom: 50px;
   }
 }
 
@@ -63,5 +70,15 @@
 
   @include above($desktop-width) {
     flex-direction: column;
+  }
+}
+
+.example__slider {
+  @include above($tablet-width) {
+    padding-top: 566px;
+  }
+
+  @include above($desktop-width) {
+    padding-top: 496px;
   }
 }

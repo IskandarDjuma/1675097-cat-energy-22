@@ -4,7 +4,7 @@
   }
 
   @include above($desktop-width) {
-    margin-bottom: 75px;
+    margin-bottom: 58px;
   }
 }
 
@@ -21,7 +21,7 @@
 
   @include above($tablet-width) {
     @include font-size (60px, 60px, 400);
-    margin-bottom: 84px;
+    margin-bottom: 33px;
   }
 
   &::before,
@@ -45,8 +45,9 @@
     bottom: 0;
   }
 
-  @include above($tablet-width) {
+  @include above($desktop-width) {
     padding: 0;
+    margin-bottom: 84px;
 
     &::before,
     &::after {

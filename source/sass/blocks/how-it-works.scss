@@ -1,5 +1,33 @@
 .how-it-works {
-  padding: 27px 0 42px;
+  position: relative;
+  padding: 2px 0 30px;
+
+  &::before {
+    @include above($tablet-width) {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 50%;
+      left: 50%;
+      width: 100vw;
+      height: 1px;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      background-color: $basic-light-grey;
+
+      @include above($desktop-width) {
+        display: none;
+      }
+    }
+  }
+
+  @include above($tablet-width) {
+    padding-bottom: 45px;
+  }
+
+  @include above($desktop-width) {
+    padding-bottom: 72px;
+  }
 }
 
 .how-it-works__title {
@@ -13,6 +41,10 @@
     @include font-size (60px, 60px, 400);
     padding-bottom: 32px;
   }
+
+  @include above($tablet-width) {
+    padding-bottom: 40px;
+  }
 }
 
 .how-it-works__list {
@@ -22,7 +54,7 @@
   @include above($tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 37px 150px;
+    gap: 37px 60px;
     padding: 0;
   }
 
@@ -88,10 +120,10 @@
 
     &::before {
       margin-right: auto;
-      margin-top: 15%;
+      margin-top: 11%;
       width: 80px;
       height: 80px;
-      background-size: 50px 50px;
+      background-size: 30px 50px;
     }
 
     &::after {
@@ -117,8 +149,13 @@
 
   @include above($tablet-width) {
     @include font-size (16px, 24px, 400);
-    padding-top: 30px;
-    padding-right: 29px;
+    padding-top: 32px;
+    padding-right: 65px;
     padding-bottom: 57px;
+  }
+
+  @include above($desktop-width) {
+    padding-right: 0;
+    padding-top: 33px;
   }
 }

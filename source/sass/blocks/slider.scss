@@ -7,7 +7,15 @@
   width: 228px;
 
   @include above($tablet-width) {
-    width: 590px;
+    margin-top: -22px;
+    margin-bottom: 47px;
+    width: 568px;
+  }
+
+  @include above($desktop-width) {
+    margin-bottom: 0;
+    width: auto;
+    padding-left: 26px;
   }
 }
 
@@ -106,27 +114,28 @@
   position: relative;
 
   @include above($desktop-width) {
-    margin-bottom: 68px;
+    margin-bottom: 18px;
   }
 }
 
 .slider__image-before {
+  margin-bottom: 40px;
+
   @include above($tablet-width) {
     position: absolute;
     display: block;
     width: 50%;
-    top: 0;
-    bottom: 0;
+    top: -547px;
+    left: 0;
     z-index: 2;
     overflow: hidden;
-  }
-
-  @include above($tablet-width) {
-    width: 50%;
+    margin-bottom: 0;
   }
 
   @include above($desktop-width) {
-    width: 56%;
+    top: -560px;
+    left: -45px;
+    width: 60%;
   }
 }
 
@@ -136,6 +145,17 @@
   @include above($tablet-width) {
     display: block;
     margin-left: 105px;
+    position: absolute;
+    width: 100%;
+    top: -547px;
+    left: 0;
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+
+  @include above($desktop-width) {
+    top: -560px;
+    left: -54px;
   }
 }
 

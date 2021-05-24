@@ -1,7 +1,11 @@
 .radio {
   @include above($tablet-width) {
     border: 1px solid $basic-grey200;
-    padding: 25px 27px;
+    padding: 25px 32px;
+  }
+
+  @include above($desktop-width) {
+    padding: 32px 25px;
   }
 }
 
@@ -22,14 +26,27 @@
 
   @include above($tablet-width) {
     @include font-size (20px, 30px, 400);
+    padding-left: 56px;
+  }
+
+  @include above($desktop-width) {
+    padding-left: 60px;
   }
 }
 
 .radio__item {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 
   &:last-child {
-    margin-bottom: 0;
+    margin-bottom: -6px;
+  }
+
+  @include above($tablet-width) {
+    margin-bottom: 23px;
+  }
+
+  @include above($desktop-width) {
+    margin-bottom: 21px;
   }
 }
 
@@ -42,6 +59,11 @@
   height: 30px;
   border: 1px solid $special-grey;
   border-radius: 50%;
+
+  @include above($tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 
@@ -54,6 +76,13 @@
   height: 13px;
   background-color: $basic-green;
   border-radius: 50%;
+
+  @include above($tablet-width) {
+    top: 11px;
+    left: 12px;
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .radio__input:hover + .radio__label::before,

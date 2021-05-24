@@ -2,12 +2,12 @@
   @include above($tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 40px 20px;
   }
 
   @include above($desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 104px;
+    gap: 80px;
   }
 }
 
@@ -26,6 +26,8 @@
 
   @include above($tablet-width) {
     @include font-size (20px, 30px, 400);
+    padding-left: 14px;
+    padding-top: 7px;
   }
 }
 
@@ -37,6 +39,11 @@
   width: 30px;
   height: 30px;
   border: 1px solid $special-grey;
+
+  @include above($tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .checkbox__input:checked + .checkbox__label::after {
@@ -49,6 +56,11 @@
   background-image: url("../img/checked-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  @include above($tablet-width) {
+    top: 12px;
+    left: -33px;
+  }
 }
 
 .checkbox__input:hover + .checkbox__label::before,
@@ -62,7 +74,7 @@
 
 
 .checkbox__item {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   padding-left: 45px;
 
   &:last-child {

@@ -1,15 +1,20 @@
 .page-header {
   padding-top: 24px;
-  padding-bottom: 1px;
+  padding-bottom: 10px;
   min-height: 66px;
 
   @include above ($tablet-width) {
-    padding-top: 42px;
-    padding-bottom: 62px;
+    padding-bottom: 31px;
   }
 
   @include above ($desktop-width) {
     position: relative;
+    padding-top: 54px;
+    padding-bottom: 107px;
+
+    &--inner {
+      padding-bottom: 73px;
+    }
   }
 
   &--index::before {
@@ -17,7 +22,7 @@
       content: "";
       position: absolute;
       width: calc(100% / 2);
-      height: 720px;
+      height: 694px;
       top: 0;
       right: 0;
       background-color: $basic-green200;
@@ -46,7 +51,7 @@
   display: flex;
   width: 100%;
   align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 8px;
 
   @include above ($tablet-width) {
     width: auto;

@@ -1,10 +1,14 @@
 .page-footer {
   background-color: $basic-grey;
-  padding: 39px 0 32px;
+  padding: 40px 0 32px;
 
   @include above($tablet-width) {
-    padding: 55px 0 61px;
+    padding: 35px 0 61px;
     align-items: center;
+  }
+
+  @include above($desktop-width) {
+    padding: 38px 0 61px;
   }
 }
 
@@ -21,7 +25,7 @@
 
 .page-footer__logo {
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 22px;
   cursor: pointer;
 
   &:hover,
@@ -35,5 +39,8 @@
 
   @include above($tablet-width) {
     margin-bottom: 0;
+    margin-top: 10px;
+    margin-left: 2px;
+    margin-right: 11px;
   }
 }
