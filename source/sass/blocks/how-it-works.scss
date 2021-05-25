@@ -1,6 +1,6 @@
 .how-it-works {
   position: relative;
-  padding: 2px 0 30px;
+  padding: 2px 0 44px;
 
   &::before {
     @include above($tablet-width) {
@@ -14,10 +14,10 @@
       margin-left: -50vw;
       margin-right: -50vw;
       background-color: $basic-light-grey;
+    }
 
-      @include above($desktop-width) {
-        display: none;
-      }
+    @include above($desktop-width) {
+      display: none;
     }
   }
 
@@ -26,7 +26,7 @@
   }
 
   @include above($desktop-width) {
-    padding-bottom: 72px;
+    padding-bottom: 70px;
   }
 }
 
@@ -39,11 +39,11 @@
 
   @include above($tablet-width) {
     @include font-size (60px, 60px, 400);
-    padding-bottom: 40px;
+    padding-bottom: 37px;
   }
 
   @include above($desktop-width) {
-    padding-bottom: 46px;
+    padding-bottom: 35px;
   }
 }
 
@@ -54,7 +54,7 @@
   @include above($tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 37px 60px;
+    gap: 40px 60px;
     padding: 0;
   }
 
@@ -141,6 +141,12 @@
       @include font-size (280px, 280px, 400);
     }
   }
+
+  @include above($desktop-width) {
+    &::before {
+      margin-top: 15%;
+    }
+  }
 }
 
 .how-it-works__description {
@@ -152,10 +158,14 @@
     padding-top: 32px;
     padding-right: 65px;
     padding-bottom: 57px;
+
+    span {
+      display: block;
+    }
   }
 
   @include above($desktop-width) {
     padding-right: 0;
-    padding-top: 33px;
+    padding-top: 31px;
   }
 }

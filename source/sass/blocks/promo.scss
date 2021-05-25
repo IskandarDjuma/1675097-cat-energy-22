@@ -1,6 +1,6 @@
 .promo {
   background-color: $basic-white;
-  background-image: url("../img/mobile-bg-cat@1x.jpg"), linear-gradient(to bottom, $basic-green100 60.8%, transparent 60.8%, transparent 100%);
+  background-image: url("../img/mobile-bg-cat@1x.jpg"), linear-gradient(to bottom, $basic-green100 59.8%, transparent 59.8%, transparent 100%);
   background-repeat: no-repeat;
   background-position: 50% 0;
   padding: 27px 0 22px;
@@ -18,13 +18,17 @@
   }
 
   @include above ($desktop-width) {
-    padding: 0 0 267px;
+    padding: 0 0 266px;
   }
 }
 
 .promo__wrapper {
   @include above ($tablet-width) {
     padding-left: 117px;
+  }
+
+  @include above ($desktop-width) {
+    padding-left: 111px;
   }
 }
 
@@ -52,14 +56,18 @@
   text-transform: uppercase;
   color: $basic-white;
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 27px;
   text-align: center;
 
   @include above ($tablet-width) {
     @include font-size (20px, 20px, 400);
     color: $basic-black;
-    margin-bottom: 50px;
+    margin-bottom: 49px;
     text-align: left;
+  }
+
+  @include above ($desktop-width) {
+    margin-bottom: 52px;
   }
 }
 
@@ -77,7 +85,7 @@
   @include above ($desktop-width) {
     left: 58%;
     bottom: auto;
-    top: -78px;
+    top: -62px;
     width: 552px;
     height: 499px;
     transform: translateX(-50%);
@@ -90,9 +98,11 @@
   @include above ($tablet-width) {
     width: max-content;
     margin-top: auto;
+    margin-left: -5px;
   }
 
   @include above ($desktop-width) {
     @include font-size (20px, 20px, 400);
+    margin-left: 0;
   }
 }

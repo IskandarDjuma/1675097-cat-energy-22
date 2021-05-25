@@ -48,7 +48,7 @@
 
   &--name {
     @include above($tablet-width) {
-      margin-bottom: 88px;
+      margin-bottom: 81px;
     }
 
     @include above($desktop-width) {
@@ -83,7 +83,7 @@
     }
 
     @include above($tablet-width) {
-      margin-bottom: 78px;
+      margin-bottom: 75px;
 
       &::before,
       &::after {
@@ -93,7 +93,7 @@
 
     @include above($desktop-width) {
       grid-area: program;
-      margin-bottom: 75px;
+      margin-bottom: 72px;
     }
   }
 
@@ -146,9 +146,6 @@
 .form__field {
   margin-bottom: 14px;
   display: flex;
-  // display: grid;
-  // grid-template-columns: max-content 1fr;
-  // gap: 13px;
 
   &:last-child {
     margin-bottom: -9px;

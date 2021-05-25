@@ -13,7 +13,7 @@
   padding-bottom: 25px;
 
   @include above($tablet-width) {
-    padding: 64px 80px 60px;
+    padding: 65px 72px 60px 82px;
   }
 
   @include above($desktop-width) {
@@ -22,9 +22,9 @@
     left: calc(50% - 611px);
     width: 570px;
     background-color: $basic-white;
-    padding-top: 58px;
-    padding-left: 86px;
-    padding-right: 75px;
+    padding-top: 57px;
+    padding-left: 88px;
+    padding-right: 73px;
   }
 }
 

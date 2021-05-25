@@ -12,9 +12,8 @@
     background-image:
       linear-gradient(to bottom, $basic-white 134px, $transparent 134px),
       linear-gradient(to right, $basic-grey calc(50% + 325px), $special-grey-bg calc(50% + 325px));
-    // background-image:
     padding: 0;
-    padding-bottom: 53px;
+    padding-bottom: 55px;
   }
 }
 
@@ -58,7 +57,7 @@
 
   @include above($desktop-width) {
     width: 436px;
-    margin-bottom: 50px;
+    margin-bottom: 51px;
   }
 }
 
@@ -96,7 +95,7 @@
     text-align: end;
     margin-top: 0;
 
-    &--price {
+    span {
       display: block;
       padding-top: 10px;
     }

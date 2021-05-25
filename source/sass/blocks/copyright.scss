@@ -1,20 +1,14 @@
 .copyright__link {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-
 
   &:active {
     opacity: 0.6;
   }
 
   @include above($tablet-width) {
-    align-items: center;
+    justify-content: flex-start;
     width: 162px;
-  }
-
-  @include above($desktop-width) {
-    width: 170px;
   }
 }
 
@@ -28,6 +22,8 @@
   font-family: $secondary-text;
   color: $special-dark-grey;
   margin: 0;
+  margin-right: 18px;
+  padding-top: 4px;
 }
 
 .copyright__link-svg {

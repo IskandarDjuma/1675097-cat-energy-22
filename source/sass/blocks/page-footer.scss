@@ -8,7 +8,7 @@
   }
 
   @include above($desktop-width) {
-    padding: 38px 0 61px;
+    padding-top: 46px;
   }
 }
 
@@ -38,9 +38,10 @@
   }
 
   @include above($tablet-width) {
-    margin-bottom: 0;
-    margin-top: 10px;
-    margin-left: 2px;
-    margin-right: 11px;
+    margin-top: 24px;
+  }
+
+  @include above($desktop-width) {
+    margin: 0;
   }
 }

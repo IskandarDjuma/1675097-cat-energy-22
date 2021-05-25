@@ -9,6 +9,7 @@
 @import "blocks/container";
 @import "blocks/page";
 @import "blocks/page-header";
+@import "blocks/logo";
 @import "blocks/page-main";
 @import "blocks/main-nav";
 @import "blocks/site-list";
@@ -23,7 +24,7 @@
 @import "blocks/contacts";
 @import "blocks/page-footer";
 @import "blocks/copyright";
-@import "blocks/social";
+@import "blocks/social-list";
 
 // Blocks-Form
 
@@ -39,6 +40,7 @@
 @import "blocks/catalog";
 @import "blocks/cards";
 @import "blocks/card-item";
+@import "blocks/card-content";
 @import "blocks/show-more";
 @import "blocks/additionally";
 @import "blocks/present";

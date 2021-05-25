@@ -1,11 +1,11 @@
 .radio {
   @include above($tablet-width) {
     border: 1px solid $basic-grey200;
-    padding: 25px 32px;
+    padding: 30px 32px;
   }
 
   @include above($desktop-width) {
-    padding: 32px 25px;
+    padding: 32px 26px;
   }
 }
 
@@ -46,7 +46,7 @@
   }
 
   @include above($desktop-width) {
-    margin-bottom: 21px;
+    margin-bottom: 20px;
   }
 }
 

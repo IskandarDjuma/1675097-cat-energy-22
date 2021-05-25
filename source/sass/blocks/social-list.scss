@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
   width: 100%;
   padding: 20px 58px 15px;
   border-top: 1px solid $basic-light-grey;
@@ -12,12 +12,28 @@
   @include above($tablet-width) {
     margin-bottom: 0;
     border: none;
-    width: 250px;
-    justify-content: space-between;
+    padding-top: 9px;
+    width: 242px;
+    justify-content: flex-start;
+    align-items: center;
   }
 
   @include above($desktop-width) {
     width: 20%;
+  }
+}
+
+.social-list__item {
+  @include above($tablet-width) {
+    margin-right: 19px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @include above($desktop-width) {
+    margin-right: 20px;
   }
 }
 

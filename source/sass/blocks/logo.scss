@@ -1,10 +1,19 @@
 .logo {
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .logo__image {
-  width: 190px;
-  height: 37px;
+  width: 193px;
+  height: 38px;
 
   @include above($tablet-width) {
     width: 174px;

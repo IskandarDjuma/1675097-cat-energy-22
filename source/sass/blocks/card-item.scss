@@ -53,6 +53,7 @@
 
   @include above($desktop-width) {
     margin-bottom: 25px;
+    padding-left: 8px;
   }
 }
 
@@ -65,10 +66,10 @@
 
   @include above($tablet-width) {
     @include font-size (20px, 24px, 400);
+    margin: 0 auto;
     margin-bottom: 0;
     text-align: center;
     width: 50%;
-    margin-top: 6px;
   }
 
   @include above($desktop-width) {
@@ -83,47 +84,14 @@
 
   @include above($tablet-width) {
     grid-column: 1/-1;
-    padding: 0 35px;
+    padding: 0 40px;
     margin-bottom: 35px;
   }
 
   @include above($desktop-width) {
     padding: 0 38px;
-    margin-bottom: 38px;
+    margin-bottom: 34px;
   }
-}
-
-.card-content {
-  @include font-size (12px, 16px, 400);
-  margin: 0;
-  color: $special-dark-grey;
-
-  @include above($tablet-width) {
-    @include font-size (16px, 16px, 400);
-  }
-}
-
-.card-content__stats {
-  display: flex;
-  justify-content: space-between;
-
-  @include above($tablet-width) {
-    margin-bottom: 11px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid $special-grey;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  @include above($desktop-width) {
-    margin-bottom: 10px;
-  }
-}
-
-.card-content__definition {
-  margin: 0;
 }
 
 .card-item__img {
@@ -140,7 +108,7 @@
   }
 
   @include above($desktop-width) {
-    margin-bottom: 65px;
+    margin-bottom: 73px;
   }
 }
 

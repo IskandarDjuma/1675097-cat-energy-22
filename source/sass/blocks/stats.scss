@@ -9,13 +9,13 @@
   }
 
   @include above($desktop-width) {
-    margin-bottom: 60px;
+    margin-bottom: 62px;
     margin-right: auto;
     width: 61%;
   }
 }
 
-.stats-item {
+.stats__item {
   display: block;
   position: relative;
 
