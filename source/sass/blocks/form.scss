@@ -258,12 +258,12 @@
   width: 100%;
 
   @include above($tablet-width) {
-    width: 40%;
-    margin-right: 77px;
+    width: 282px;
+    margin-right: 62px;
   }
 
   @include above($desktop-width) {
-    margin-right: 75px;
-    width: 47%;
+    margin-right: 82px;
+    width: 568px;
   }
 }

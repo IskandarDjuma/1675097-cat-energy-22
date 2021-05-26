@@ -48,7 +48,7 @@
   @include above($tablet-width) {
     grid-column: 1/-1;
     text-align: -webkit-center;
-    margin-bottom: 17px;
+    margin-bottom: 18px;
   }
 
   @include above($desktop-width) {
@@ -84,12 +84,11 @@
 
   @include above($tablet-width) {
     grid-column: 1/-1;
-    padding: 0 40px;
-    margin-bottom: 35px;
+    padding: 0 38px;
+    margin-bottom: 36px;
   }
 
   @include above($desktop-width) {
-    padding: 0 38px;
     margin-bottom: 34px;
   }
 }
@@ -102,13 +101,9 @@
     grid-column: 1/-1;
     grid-row: 1/2;
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 73px;
     height: 172px;
     padding-left: 0;
-  }
-
-  @include above($desktop-width) {
-    margin-bottom: 73px;
   }
 }
 

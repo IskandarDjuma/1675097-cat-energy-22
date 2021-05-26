@@ -21,7 +21,7 @@
 
   @include above($tablet-width) {
     @include font-size (60px, 60px, 400);
-    margin-bottom: 33px;
+    margin-bottom: 40px;
   }
 
   &::before,

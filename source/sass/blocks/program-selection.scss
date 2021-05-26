@@ -15,10 +15,12 @@
 .program-selection__wrapper {
   @include above($tablet-width) {
     padding-left: 70px;
+    padding-right: 67px;
   }
 
   @include above($desktop-width) {
     padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -52,7 +54,7 @@
 
   @include above($tablet-width) {
     @include font-size (20px, 30px, 400);
-    width: 50%;
+    width: 52%;
     margin-bottom: 66px;
   }
 

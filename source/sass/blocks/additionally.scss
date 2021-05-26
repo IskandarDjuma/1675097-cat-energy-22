@@ -128,11 +128,17 @@
   }
 
   @include above($desktop-width) {
+    padding-top: 5px;
+
     &--size {
       margin-left: auto;
-      width: 244px;
+      width: 195px;
       text-align: left;
       align-items: flex-start;
+    }
+
+    &--price {
+      min-width: 45px;
     }
   }
 }
